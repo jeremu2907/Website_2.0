@@ -14,7 +14,6 @@
 .exp_title{
     padding-top:100px;
     font-family: 'Cairo', sans-serif;
-
 }
 .exp_p{
     font-family: 'Cormorant Garamond', serif;
@@ -27,6 +26,11 @@
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-size: 25px;
+}
+.exp_subject title{
+    font-family: 'Cairo', sans-serif;
+    font-size: 25px;
+    text-align:left;
 }
 
 

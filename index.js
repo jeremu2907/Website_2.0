@@ -16,3 +16,9 @@ function wait(){
     },10000)
 }
 wait();
+
+$(window).bind('mousewheel DOMMouseScroll', function (event) {
+    if (event.ctrlKey == true) {
+    event.preventDefault();
+    }
+});

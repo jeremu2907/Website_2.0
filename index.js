@@ -16,23 +16,17 @@ function wait(){
 }
 wait();
 
-$(document).ready(function(){
-    $("#moreInformation").mouseover(function(){
-      $("#skills").animate({left: '0%'});
-    });
-});
 
-$(document).ready(function(){
-    $("#mainPage").mouseleave(function(){
-      $("#skills").animate({left: '0%'});
-    });
-});
+window.addEventListener('scroll',() => {
+    if ((document.body.scrollTop > 800 && document.body.scrollTop < 805) || 
+        (document.documentElement.scrollTop > 800 && document.documentElement.scrollTop < 805)){
+        $("#skills").animate({left: '0%'});
+        console.log("out");
 
-$(document).ready(function(){
-    $("#moreInformation").hover(function(){
-      $("#skills").animate({left: '0%'});
-    });
-});
+        window.removeEventListener('scroll',()=>{});
+    }
+})
+
 
 $(document).ready(function(){
     $("#moreInformation").mouseleave(function(){

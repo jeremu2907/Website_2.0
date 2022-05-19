@@ -7,12 +7,12 @@ body{
     animation: fadeIn;
     animation-timing-function: ease-in;
     animation-duration: 0.5s;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    /* scroll-snap-type: y mandatory;
+    overflow-y: scroll; */
 }
 
 section{
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 
 @keyframes fadeIn {
@@ -197,6 +197,11 @@ SECTION 3
 /* Experience */
 .exp{
     background-color: rgb(44, 44, 44);
+    background-image: url("136-1369543_laptop-coding.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-blend-mode: darken;
     height:auto;
     width:100%;
     color:#bdbdbd;

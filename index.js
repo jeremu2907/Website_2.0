@@ -1,5 +1,4 @@
 
-
 function wait(){
     //adding a terminal line
     setTimeout(() => {
@@ -17,8 +16,26 @@ function wait(){
 }
 wait();
 
-$(window).bind('mousewheel DOMMouseScroll', function (event) {
-    if (event.ctrlKey == true) {
-    event.preventDefault();
-    }
+$(document).ready(function(){
+    $("#moreInformation").mouseover(function(){
+      $("#skills").animate({left: '0%'});
+    });
+});
+
+$(document).ready(function(){
+    $("#mainPage").mouseleave(function(){
+      $("#skills").animate({left: '0%'});
+    });
+});
+
+$(document).ready(function(){
+    $("#moreInformation").hover(function(){
+      $("#skills").animate({left: '0%'});
+    });
+});
+
+$(document).ready(function(){
+    $("#moreInformation").mouseleave(function(){
+      $("#skills").animate({left: '-25%'});
+    });
 });

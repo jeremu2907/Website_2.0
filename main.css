@@ -7,30 +7,76 @@
 /* Experience */
 .exp{
     background-color: rgb(57, 57, 57);
-    height: 900px;
-    text-align: center;
+    height:auto;
+    width:100%;
     color:#bdbdbd;
 }
 .exp_title{
     padding-top:100px;
     font-family: 'Cairo', sans-serif;
+    text-align: center;
 }
 .exp_p{
     font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
+    text-align: center;
 }
 .exp_quoteBlock{
-    transform:translate(-35%,90%);
+    position:relative;
+    top:70px;
+    padding-left:2%;
+    background-color: black;
+    padding-top:2%;
+    padding-bottom:2%;
 }
 .quote{
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-size: 25px;
 }
-.exp_subject title{
+.exp_wrap{
+    width: 80%;
+    left:50%;
+    position: relative;
+    transform: translate(-50%);
+    height: auto;
+}
+.exp_subject_company{
+    position:relative;
+    left:45%;
+    height: 100px;
+    transform: translate(-100%);
+    width:25%;
+    text-align:right;
+    padding-top:4.5%;
+}
+.exp_subject_company h{ 
     font-family: 'Cairo', sans-serif;
     font-size: 25px;
+    color:rgb(224, 96, 49);
+}
+.exp_subject_company h1{ 
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    color:rgb(151, 151, 151);
+}
+.exp_subject_company h2{ 
+    font-family: 'Cairo', sans-serif;
+    font-size: 17px;
+    color:rgb(151, 151, 151);
+}
+.exp_subject_description{
+    position:relative;
+    left:48%;
+    width:40%;
+    /* padding-top: 5%; */
     text-align:left;
+    /* transform: translate(0,-2%); */
+}
+.exp_subject_description ul{ 
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    color:#bdbdbd;
 }
 
 
@@ -64,16 +110,17 @@
 
 .bg-image {
     background-image: url("PC.jpg");
-    height: 100%;
+    height:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: local;
 }
 
 
 .bg-image2 {
     background-image: url("6284951fe5ca6.jpg");
-    height: 100%;
+    height: 900px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,7 +143,7 @@
     font-family: 'Courier New', monospace;
 }
 .container {
-    max-width: 300px;
+    width: 30px;
 }
 .link {
     color:#1FA0B1;
@@ -181,3 +228,17 @@
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
+body{
+    height:100%;
+    margin: 0px;
+    max-width: 100%;
+    animation: fadeIn;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeIn {
+    0%   { opacity:0; }
+    100% { opacity:1; }
+  }

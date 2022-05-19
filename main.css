@@ -1,135 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Cormorant+Garamond:ital,wght@0,400;1,300&family=Montserrat+Alternates:wght@100;300;400&display=swap');
 
-* body{
-    margin: 0;
+body{
+    height:100%;
+    margin: 0px;
+    max-width: 100%;
+    animation: fadeIn;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
-/* Experience */
-.exp{
-    background-color: rgb(44, 44, 44);
-    height:auto;
-    width:100%;
-    color:#bdbdbd;
+section{
+    scroll-snap-align: start;
 }
-.exp_title{
-    padding-top:100px;
-    font-family: 'Cairo', sans-serif;
-    text-align: center;
-}
-.exp_p{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
-    text-align: center;
-    padding-bottom: 90px;
-}
-.exp_wrap{
-    width: 80%;
-    left:50%;
-    position: relative;
-    transform: translate(-50%);
-    height: auto;
-}
-.row{
-    display: flex;
-}
-.exp_subject{
-    height:auto;
-    padding-bottom: 90px;
-}
-.exp_subject_company{
-    position:relative;
-    left:10%;
-    width:25%;
-    text-align:right;
-}
-.exp_subject_company h{ 
-    font-family: 'Cairo', sans-serif;
-    font-size: 25px;
-    color:rgb(224, 96, 49);
-}
-.exp_subject_company h1{ 
-    font-family: 'Cairo', sans-serif;
-    font-size: 20px;
-    color:rgb(151, 151, 151);
-}
-.exp_subject_company h2{ 
-    font-family: 'Cairo', sans-serif;
-    font-size: 17px;
-    color:rgb(151, 151, 151);
-}
-.exp_subject_description{
-    position:relative;
-    left:20%;
-    width:45%;
-    text-align:left;
-}
-.exp_subject_description ul{ 
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    color:#bdbdbd;
-}
-.exp_quoteBlock{
-    position:absolute;
-    width: 100%;
-    padding-left:2%;
-    background-color: black;
-    padding-top:2%;
-    padding-bottom:2%;
-}
-.quote{
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 25px;
+
+@keyframes fadeIn {
+    0%   { opacity:0; }
+    100% { opacity:1; }
 }
 
 
+/*////////////////////////////////////// 
 
-/* Side Panels */
-.bg-text-left {
-    background-color: rgba(44, 44, 44, 0.751);
-    position: relative;
-    width: 25%;
-    height: 100%;
-    padding: 0.5px;
-}
-.textBox {
-    position:relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    color:rgb(212, 212, 212);
-}
-.title{
-    text-align:center;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 30px;
-    text-decoration: underline;
-}
-.list{
-    font-family: 'Montserrat Alternates', sans-serif;
-    text-align:   center;
-    padding-right:10%;
-}
 
+SECTION 1
+
+
+//////////////////////////////////////*/
 .bg-image {
     background-image: url("PC.jpg");
     height:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-
-.bg-image2 {
-    background-image: url("6284951fe5ca6.jpg");
-    height: auto, 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:fixed; 
-}
-
-.media {
-    position:absolute;
+}.media {
+    
+    position:relative;
     width:107ch;
     top: 45%;
     left: 50%;
@@ -230,16 +137,137 @@
     visibility: visible;
 }
 
-body{
-    height:100%;
-    margin: 0px;
-    max-width: 100%;
-    animation: fadeIn;
-    animation-timing-function: ease-in;
-    animation-duration: 0.5s;
+
+
+/*////////////////////////////////////// 
+
+
+SECTION 2
+
+
+//////////////////////////////////////*/
+
+
+/* Side Panels */
+.bg-text-left {
+    background-color: rgba(44, 44, 44, 0.751);
+    position: relative;
+    width: 25%;
+    height: 100%;
+    padding: 0.5px;
+    left:-25%;
+}
+.textBox {
+    position:relative;
+    color:rgb(212, 212, 212);
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+.title{
+    text-align:center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.list{
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align:   center;
+    padding-right:10%;
 }
 
-@keyframes fadeIn {
-    0%   { opacity:0; }
-    100% { opacity:1; }
-  }
+
+.bg-image2 {
+    background-image: url("6284951fe5ca6.jpg");
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed; 
+}
+
+
+/*////////////////////////////////////// 
+
+
+SECTION 3
+
+
+//////////////////////////////////////*/
+
+/* Experience */
+.exp{
+    background-color: rgb(44, 44, 44);
+    height:auto;
+    width:100%;
+    color:#bdbdbd;
+}
+.exp_title{
+    padding-top:100px;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+}
+.exp_p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 90px;
+}
+.exp_wrap{
+    width: 80%;
+    left:50%;
+    position: relative;
+    transform: translate(-50%);
+    height: auto;
+}
+.row{
+    display: flex;
+}
+.exp_subject{
+    height:auto;
+    padding-bottom: 90px;
+}
+.exp_subject_company{
+    position:relative;
+    left:10%;
+    width:25%;
+    text-align:right;
+}
+.exp_subject_company h{ 
+    font-family: 'Cairo', sans-serif;
+    font-size: 25px;
+    color:rgb(224, 96, 49);
+}
+.exp_subject_company h1{ 
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    color:rgb(151, 151, 151);
+}
+.exp_subject_company h2{ 
+    font-family: 'Cairo', sans-serif;
+    font-size: 17px;
+    color:rgb(151, 151, 151);
+}
+.exp_subject_description{
+    position:relative;
+    left:20%;
+    width:45%;
+    text-align:left;
+}
+.exp_subject_description ul{ 
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    color:#bdbdbd;
+}
+.exp_quoteBlock{
+    position:absolute;
+    width: 100%;
+    padding-left:2%;
+    background-color: black;
+    padding-top:2%;
+    padding-bottom:2%;
+}
+.quote{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 25px;
+}

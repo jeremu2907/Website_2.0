@@ -22,8 +22,8 @@
     text-align: center;
 }
 .exp_quoteBlock{
-    position:relative;
-    top:70px;
+    position:absolute;
+    width: 100%;
     padding-left:2%;
     background-color: black;
     padding-top:2%;
@@ -41,10 +41,14 @@
     transform: translate(-50%);
     height: auto;
 }
+.exp_subject{
+    height:auto;
+    padding-bottom:70px;
+}
 .exp_subject_company{
     position:relative;
     left:45%;
-    height: 100px;
+    /* height: 100px; */
     transform: translate(-100%);
     width:25%;
     text-align:right;
@@ -68,10 +72,9 @@
 .exp_subject_description{
     position:relative;
     left:48%;
-    width:40%;
-    /* padding-top: 5%; */
+    width:60ch;
+    /* height:300px; */
     text-align:left;
-    /* transform: translate(0,-2%); */
 }
 .exp_subject_description ul{ 
     font-family: 'Cormorant Garamond', serif;

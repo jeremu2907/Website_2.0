@@ -43,6 +43,7 @@ $(document).ready(function(){
     });
 });
 
+
 //This function slides experiences from left to right
 async function experienceFadeFromLeft(){
     var scrolled = false;

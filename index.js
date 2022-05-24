@@ -1,3 +1,5 @@
+
+
 //This function displays the terminal animation on screen
 function wait(){
     //adding a terminal line
@@ -17,16 +19,23 @@ function wait(){
 wait();
 
 //This function display the side bar in section 2
-window.addEventListener('scroll',() => {
-    if ((document.body.scrollTop > 800 && document.body.scrollTop < 805) || 
-        (document.documentElement.scrollTop > 800 && document.documentElement.scrollTop < 805)){
-        $("#skills").animate({left: '0%'});
-        console.log("out");
-        
-        //Removing any running event listener for scrolling
-        window.removeEventListener('scroll',()=>{});
-    }
-})
+ async function leftPanelPopOut(){
+    var scrolled = false;
+
+    window.addEventListener('scroll',() => {
+        if (((document.body.scrollTop > 700 && document.body.scrollTop < 1200)  || 
+            (document.documentElement.scrollTop > 700 && document.documentElement.scrollTop < 1200)) && scrolled == false){
+            $("#skills").animate({left: '0%'});
+            console.log("out");
+    
+            scrolled = true;
+            setTimeout(()=>{
+                scrolled = false;
+            },1200);
+        }
+    })
+}
+leftPanelPopOut();
 
 //This function collapes side bar when mouse leaves the section
 $(document).ready(function(){

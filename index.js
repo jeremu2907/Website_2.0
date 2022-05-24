@@ -26,7 +26,7 @@ async function leftPanelPopOut(){
         if (((document.body.scrollTop > 700 && document.body.scrollTop < 1200)  || 
             (document.documentElement.scrollTop > 700 && document.documentElement.scrollTop < 1200)) && scrolled == false){
             $("#skills").animate({left: '0%'});
-            console.log("out");
+            console.log("Left Panel Out");
     
             scrolled = true;
             setTimeout(()=>{
@@ -39,6 +39,7 @@ async function leftPanelPopOut(){
 $(document).ready(function(){
     $("#moreInformation").mouseleave(function(){
       $("#skills").animate({left: '-25%'});
+      console.log("Left Panel In")
     });
 });
 

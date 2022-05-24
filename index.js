@@ -19,7 +19,7 @@ function wait(){
 wait();
 
 //This function display the side bar in section 2
- async function leftPanelPopOut(){
+async function leftPanelPopOut(){
     var scrolled = false;
 
     window.addEventListener('scroll',() => {
@@ -35,11 +35,35 @@ wait();
         }
     })
 }
-leftPanelPopOut();
-
 //This function collapes side bar when mouse leaves the section
 $(document).ready(function(){
     $("#moreInformation").mouseleave(function(){
       $("#skills").animate({left: '-25%'});
     });
 });
+
+//This function slides experiences from left to right
+async function experienceFadeFromLeft(){
+    var scrolled = false;
+    var title = ["#xforce", "#arng", "#numerade", "#mathnasium"];
+    var i = 0;
+
+    window.addEventListener('scroll',() => {
+        if ((document.body.scrollTop > 1500  || document.documentElement.scrollTop > 1500) && scrolled == false){
+            scrolled = true;
+            var loop=setInterval(()=>{
+                $(title[i]).animate({left: "50%"});
+                i++;
+                console.log("Wait")
+                if(i == title.length)
+                    clearInterval(loop);
+            },300);
+        }
+    })
+}
+
+
+
+//Function Calls
+leftPanelPopOut();
+experienceFadeFromLeft();

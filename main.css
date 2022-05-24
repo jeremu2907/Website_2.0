@@ -7,13 +7,15 @@ body{
     animation: fadeIn;
     animation-timing-function: ease-in;
     animation-duration: 0.5s;
-    /* scroll-snap-type: y mandatory;
-    overflow-y: scroll; */
+    /* scroll-snap-type: y mandatory; */
+    /* overflow-y: scroll; */
+    /* overflow-x:hidden; */
 }
 
-section{
-    /* scroll-snap-align: start; */
-}
+/* section{
+    scroll-snap-align: start;
+    
+} */
 
 @keyframes fadeIn {
     0%   { opacity:0; }
@@ -29,21 +31,23 @@ SECTION 1
 
 //////////////////////////////////////*/
 .bg-image {
-    background-image: url("PC.jpg");
+    background-image: url("136-1369543_laptop-coding.jpg");
+    background-color: rgb(44, 44, 44);
     height:100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}.media {
-    
+    width:100%;
+    background-position: absolute;
+    background-size:cover;
+
+}
+.media {
     position:relative;
-    width:107ch;
-    top: 45%;
+    width:100ch;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0;
+    /* margin: 0; */
     color: rgb(210, 209, 209);
-    background: rgba(5,5,5,0);
+    background: rgba(5, 5, 5, 0.5);
     padding: 50px;
 }
 .intro {
@@ -197,11 +201,10 @@ SECTION 3
 /* Experience */
 .exp{
     background-color: rgb(44, 44, 44);
-    background-image: url("136-1369543_laptop-coding.jpg");
+    /* background-image: url("136-1369543_laptop-coding.jpg"); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: center;
-    background-blend-mode: darken;
     height:auto;
     width:100%;
     color:#bdbdbd;
@@ -264,10 +267,11 @@ SECTION 3
     color:#bdbdbd;
 }
 .exp_quoteBlock{
-    position:absolute;
-    width: 100%;
-    padding-left:2%;
-    background-color: black;
+    position:relative;
+    width: 100vw;
+    padding-left:5%;
+    left:-13%;
+    background-color: rgb(31, 31, 31);
     padding-top:2%;
     padding-bottom:2%;
 }

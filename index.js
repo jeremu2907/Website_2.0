@@ -50,15 +50,17 @@ async function experienceFadeFromLeft(){
     var i = 0;
 
     window.addEventListener('scroll',() => {
-        if ((document.body.scrollTop > 1500  || document.documentElement.scrollTop > 1500) && scrolled == false){
+        if ((document.body.scrollTop > 1850  || document.documentElement.scrollTop > 1850) && scrolled == false){
             scrolled = true;
             var loop=setInterval(()=>{
-                $(title[i]).animate({left: "50%"});
+                $(title[i]).animate({
+                    left: "50%"
+                },800,"swing");
                 i++;
                 console.log("Wait")
                 if(i == title.length)
                     clearInterval(loop);
-            },300);
+            },400);
         }
     })
 }

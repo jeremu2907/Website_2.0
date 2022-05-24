@@ -222,7 +222,7 @@ SECTION 3
 }
 .exp_wrap{
     width: 80%;
-    left:50%;
+    left: -80%;
     position: relative;
     transform: translate(-50%);
     height: auto;
@@ -234,6 +234,7 @@ SECTION 3
     height:auto;
     padding-bottom: 90px;
 }
+
 .exp_subject_company{
     position:relative;
     left:10%;
@@ -266,11 +267,13 @@ SECTION 3
     font-size: 18px;
     color:#bdbdbd;
 }
+
+
 .exp_quoteBlock{
     position:relative;
     width: 100vw;
     padding-left:5%;
-    left:-13%;
+    /* left:-13%; */
     background-color: rgb(31, 31, 31);
     padding-top:2%;
     padding-bottom:2%;

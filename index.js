@@ -2,10 +2,13 @@
 function welcomeMessage(){
     var welcome = ["こんにちは!","Xin Chào!","Hello!"]
     var i = 0;
-    blink=setInterval(() =>{
-        document.getElementById("welcomeMessage").innerHTML = welcome[i%3];
-        i++;
-    },3000);    
+
+    // setTimeout(() => {
+        setInterval(() =>{
+            document.getElementById("welcomeMessage").innerHTML = welcome[i%3];
+            i++;
+        },3000);    
+    // },6000);
 }
 welcomeMessage();
 
@@ -38,6 +41,7 @@ wait();
 //This function display the side bar in section 2
 async function leftPanelPopOut(){
     var scrolled = false;
+    var yyy = false;
 
     window.addEventListener('scroll',() => {
         if (((document.body.scrollTop > 1675 && document.body.scrollTop < 2175)  || 
@@ -46,10 +50,13 @@ async function leftPanelPopOut(){
             console.log("Left Panel Out");
     
             scrolled = true;
+            yyy = true;
             setTimeout(()=>{
                 scrolled = false;
             },1200);
         }
+
+        
     })
 }
 //This function collapes side bar when mouse leaves the section

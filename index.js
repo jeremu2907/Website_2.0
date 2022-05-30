@@ -1,7 +1,16 @@
 
+function welcomeMessage(){
+    var welcome = ["こんにちは!","Xin Chào!","Hello!"]
+    var i = 0;
+    blink=setInterval(() =>{
+        document.getElementById("welcomeMessage").innerHTML = welcome[i%3];
+        i++;
+    },3000);    
+}
+welcomeMessage();
 
 //This function displays the terminal animation on screen
-function wait(){
+async function wait(){
     var scrolled = false;
 
     window.addEventListener('scroll',() => {

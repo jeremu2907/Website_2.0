@@ -1,4 +1,74 @@
+function switchTheme(option){
+    let white = "white";
+    let black = "black";
+    let dark = "rgb(23,23,23)"
+    let light = "#bdbdbd"
 
+    //to light
+    if(option % 2 == 1){
+        document.getElementById("circ").style.backgroundColor = black;
+        document.getElementById("scrolldown").style.color = dark;
+        document.getElementById("smallCirc").style.backgroundColor = white;
+        document.getElementById("Name").style.backgroundColor = white;
+        document.getElementById("message").style.color = black;
+        document.getElementById("mainPage").style.backgroundImage = 'url("section1light.jpg")';
+        document.getElementById("media").style.backgroundColor = "rgba(5, 5, 5, 0.5)";
+        document.getElementById("moreInformation").style.backgroundImage = 'url("section2light.jpg")';
+        document.getElementById("skills").style.backgroundColor = "rgba(255, 255, 255, 0.751)"
+        document.getElementById("textBox").style.color = black;
+        document.getElementById("experience").style.backgroundColor = white;
+        document.getElementById("subject").style.color = dark;
+        document.getElementById("description").style.color = dark;
+        document.getElementById("description2").style.color = dark;
+        document.getElementById("description3").style.color = dark;
+        document.getElementById("description4").style.color = dark;
+    }
+
+    //to dark
+    if(option % 2 ==0){
+        document.getElementById("circ").style.backgroundColor = white;
+        document.getElementById("smallCirc").style.backgroundColor = dark;
+        document.getElementById("scrolldown").style.color = light;
+        document.getElementById("Name").style.backgroundColor = dark;
+        document.getElementById("message").style.color = light;
+        document.getElementById("mainPage").style.backgroundImage = 'url("section1dark.jpg")';
+        document.getElementById("media").style.backgroundColor = "rgba(5, 5, 5, 0.7)";
+        document.getElementById("moreInformation").style.backgroundImage = 'url("section2dark.jpg")';
+        document.getElementById("skills").style.backgroundColor = "rgba(23, 23, 23, 0.751)"
+        document.getElementById("textBox").style.color = light;
+        document.getElementById("experience").style.backgroundColor = dark;
+        document.getElementById("subject").style.color = light;
+        document.getElementById("description").style.color = light;
+        document.getElementById("description2").style.color = light;
+        document.getElementById("description3").style.color = light;
+        document.getElementById("description4").style.color = light;
+    }
+}
+//White and dark mode
+function ClickListen() {
+    $(document).ready(function(){
+        var timesClicked = 0;
+        $("#dayNight").click(function(){
+            timesClicked++;
+            console.log(timesClicked);
+            switchTheme(timesClicked);
+        })
+    })
+}
+
+//Arrow Pointing direction
+function Arrow(){
+    window.addEventListener('scroll',() => {
+        if (document.body.scrollTop > 3600 || document.documentElement.scrollTop > 3600){
+            document.getElementById("scrolldown").innerHTML = "↑";
+        }
+        else if(document.body.scrollTop < 3600 || document.documentElement.scrollTop < 3600){
+            document.getElementById("scrolldown").innerHTML = "↓";
+        }
+    })
+}
+
+//Chaning Hello
 function welcomeMessage(){
     var welcome = ["Hello!","こんにちは!","Xin Chào!"]
     var i = 0;
@@ -9,10 +79,9 @@ function welcomeMessage(){
         },2500);    
     },1000);
 }
-welcomeMessage();
 
 //This function displays the terminal animation on screen
-async function wait(){
+function wait(){
     var scrolled = false;
 
     window.addEventListener('scroll',() => {
@@ -35,10 +104,9 @@ async function wait(){
         }
     })
 }
-wait();
 
 //This function display the side bar in section 2
-async function leftPanelPopOut(){
+function leftPanelPopOut(){
     var scrolled = false;
 
     window.addEventListener('scroll',() => {
@@ -50,7 +118,7 @@ async function leftPanelPopOut(){
             scrolled = true;
             setTimeout(()=>{
                 scrolled = false;
-            },1200);
+            },2000);
 
             $("#list").animate({left: '0%'},1500,"easeOutQuart");
             $("#list2").animate({left: '0%'},1500,"easeOutQuart");
@@ -69,9 +137,8 @@ $(document).ready(function(){
     });
 });
 
-
 //This function slides experiences from left to right
-async function experienceFadeFromLeft(){
+function experienceFadeFromLeft(){
     var scrolled = false;
     var title = ["#xforce", "#arng", "#numerade", "#mathnasium"];
     var i = 0;
@@ -95,5 +162,9 @@ async function experienceFadeFromLeft(){
 
 
 //Function Calls
+welcomeMessage();
+wait();
 leftPanelPopOut();
 experienceFadeFromLeft();
+ClickListen();
+Arrow();

@@ -14,13 +14,22 @@
     <body>
         <title>Jeremy Nguyen</title>
 
+        <div id="dayNight" class="bw">
+            <div id="circ" class="circ">
+                <div id="smallCirc" class = "smallCirc"></div>
+            </div>
+            <div id="scrolldown" class="scrolldown">
+                ↓
+            </div>
+        </div>
+
+
         <!--Welcome Screen-->
         <section id="Name" class="name">
             <div class="welcome">
                 <div class="myName">
                     <div id="welcomeMessage">Hello!</div>
                 </div>
-                <br>
                 <div id="message" class="exp_p message">
                     <h>Welcome to my website</h>
                 </div>
@@ -30,7 +39,7 @@
         <section id="mainPage" class="bg-image">
 
             <!-- Typing screen -->
-            <div class="media">
+            <div id="media" class="media">
                 <pre class="intro">
 <m style="color: #65a450">me@MyWebSite</m>:<m class="tooltip" style="color: #397e9c ">/JEREMY_NGUYEN<span class="tooltiptext">This is my name</span></m>$ cat intro.txt
 
@@ -38,9 +47,7 @@
     Hi, I'm Jeremy Nguyen and I am a computer science student at UT Dallas
 
     I also work at the Texas Army National Guard as a construction engineer
-
-    I am experienced in C, C++, Java, and JavaScript
-
+    <!-- I am experienced in C, C++, Java, and JavaScript -->
     If you would like to know more about me, please take a look at my <a href="./JeremyNguyenResume.pdf" class="link3 tooltip"target="_blank"><u style="text-decoration:none;">resume<span class="tooltiptext">This is my resume</span></u></a><br>
 <m id="disp"></m>
 
@@ -52,7 +59,7 @@
         <section>
             <div id="moreInformation" class="bg-image2">
                 <div id="skills" class="bg-text-left">
-                    <div class="textBox">
+                    <div id="textBox" class="textBox">
                         <p class="title">Skills</p>
                         <div id="list" class="list" style = "font-size: 15px">
                             <ul style="color:#719aac">C++</ul>
@@ -84,7 +91,7 @@
         <section id="experience" class="exp">
             <div>
                 <div class="exp_title" style="color:rgb(224, 96, 49); font-size: 40px"><h>// Experience</h></div><br>
-                <div class="exp_p"><h>Come along to see my journey, so far</h></div>
+                <div id="subject" class="exp_p"><h>Come along to see my journey, so far</h></div>
             </div>
 
             <div>
@@ -94,7 +101,7 @@
                         <h1>Software Developer</h1>
                         <h2>June 2022 - Present</h2>
                     </div>
-                    <div class="exp_subject_description">
+                    <div id="description" class="exp_subject_description">
                         <ul>Take the current GUI code of a software for collecting data from high-speed projectiles, which is in gtkmm2 with C/C++98, and convert it to gtkmm3 with C/C++17.</ul>
                         <ul>Compile libraries for the above software for operation in Windows environment, as the current code is optimized for Linux OS</ul>
                     </div>
@@ -106,7 +113,7 @@
                         <h1>Construction Engineer / Carpenetry-Masonry Specialist</h1>
                         <h2>March 2020 – Present</h2>
                     </div>
-                    <div class="exp_subject_description">
+                    <div id="description2" class="exp_subject_description">
                         <ul>Inspect military transportation units (LMTV, HUMVEE, etc.), report malfunctions for maintenance team</ul>
                         <ul>Load and unload military equipment, transport cargo for projects using heavy-duty trucks (LMTVs)</ul>
                         <ul>Read, interpret, and take initiative to implement construction project drawings with other construction
@@ -122,7 +129,7 @@
                         <h1>Mathematics and Physics Content Creator</h1>
                         <h2>March 2021 – February 2022</h2>
                     </div>
-                    <div class="exp_subject_description">
+                    <div id="description3" class="exp_subject_description">
                         <ul>Content creator by recording videos explaining problems presented in textbooks</ul>
                         <ul>Respond to homework questions in real time on Q&A sections and record a video explaining the topic in an
                             in-depth manner</ul>
@@ -135,7 +142,7 @@
                         <h1>Mathematics and Physics Tutor</h1>
                         <h2>June 2019 – May 2020</h2>
                     </div>
-                    <div class="exp_subject_description">
+                    <div id="description4" class="exp_subject_description">
                         <ul>Tutored math ranging from K-12 including specialized topics including Calculus, Linear Algebra, Statistics,
                             IB Math Higher Level</ul>
                         <ul>Tutored high school physics to college-level, calculus-based physics (Mechanics and Electric & Magnetism)</ul>

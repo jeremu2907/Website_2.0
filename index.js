@@ -1,14 +1,13 @@
 
 function welcomeMessage(){
-    var welcome = ["こんにちは!","Xin Chào!","Hello!"]
+    var welcome = ["Hello!","こんにちは!","Xin Chào!"]
     var i = 0;
-
-    // setTimeout(() => {
+    setTimeout(() => {
         setInterval(() =>{
             document.getElementById("welcomeMessage").innerHTML = welcome[i%3];
             i++;
-        },3000);    
-    // },6000);
+        },2500);    
+    },1000);
 }
 welcomeMessage();
 
@@ -41,19 +40,20 @@ wait();
 //This function display the side bar in section 2
 async function leftPanelPopOut(){
     var scrolled = false;
-    var yyy = false;
 
     window.addEventListener('scroll',() => {
         if (((document.body.scrollTop > 1675 && document.body.scrollTop < 2175)  || 
             (document.documentElement.scrollTop > 1675 && document.documentElement.scrollTop < 2175)) && scrolled == false){
-            $("#skills").animate({left: '0%'});
+            $("#skills").animate({left: '0%'},1000,"easeOutQuart");
             console.log("Left Panel Out");
     
             scrolled = true;
-            yyy = true;
             setTimeout(()=>{
                 scrolled = false;
             },1200);
+
+            $("#list").animate({left: '0%'},1500,"easeOutQuart");
+            $("#list2").animate({left: '0%'},1500,"easeOutQuart");
         }
 
         
@@ -62,7 +62,9 @@ async function leftPanelPopOut(){
 //This function collapes side bar when mouse leaves the section
 $(document).ready(function(){
     $("#moreInformation").mouseleave(function(){
-      $("#skills").animate({left: '-25%'});
+        $("#list").animate({left: '-100%'},1000,"easeInQuart");
+        $("#list2").animate({left: '-100%'},1000,"easeInQuart");
+      $("#skills").animate({left: '-25%'}, 1500, "easeInQuart");
       console.log("Left Panel In")
     });
 });
@@ -80,7 +82,7 @@ async function experienceFadeFromLeft(){
             var loop=setInterval(()=>{
                 $(title[i]).animate({
                     left: "50%"
-                },500,"swing");
+                },1000,"easeOutExpo");
                 i++;
                 console.log("Wait")
                 if(i == title.length)

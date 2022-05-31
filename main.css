@@ -75,12 +75,13 @@ body::-webkit-scrollbar-thumb{
 }
 
 .scrolldown{
-    position: absolute;
+    position: fixed;
     text-align: center;
     top:85vh;
     color:#bdbdbd;
     font-size:30px;
     animation: arrow 2s infinite ease-in-out;
+    right: 2%;
 }
 @keyframes arrow {
     0%{

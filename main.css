@@ -38,6 +38,14 @@ body::-webkit-scrollbar-thumb{
     100% { opacity:1; }
 }
 
+/*////////////////////////////////////// 
+
+
+Features
+
+
+//////////////////////////////////////*/
+
 .bw{
     position: fixed;
     top:3%;

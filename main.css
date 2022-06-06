@@ -90,6 +90,7 @@ Features
     font-size:30px;
     animation: arrow 2s infinite ease-in-out;
     right: 2%;
+    z-index: 3;
 }
 @keyframes arrow {
     0%{
@@ -445,19 +446,3 @@ SECTION 3
     font-size: 25px;
 }
 
-/*////////////////////////////////////// 
-
-
-SECTION 4
-
-
-//////////////////////////////////////*/
-
-.randomTitle{
-    padding-top:100px;
-}
-.wrapper{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-}

@@ -190,7 +190,7 @@ SECTION 1
 
 }
 .media {
-    position:relative;
+/*     position:relative; */
     width:75vw;
     top: 50%;
     left: 50%;

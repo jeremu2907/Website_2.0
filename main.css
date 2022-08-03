@@ -183,18 +183,19 @@ SECTION 1
 .bg-image {
     background-image: url("section1dark.jpg");
     background-color: var(--dark);
-    height: 100vh;
+    height: 103vh;
+    min-height: 60ch;
     width:100%;
     background-position: relative;
     background-size:cover;
 }
 .media {
     position:relative;
-    width:min-content;
+    width:100ch;
+    height: 53ch;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow-wrap: break-word;
     color: rgb(210, 209, 209);
     background-color: rgba(5, 5, 5, 0.5);
     padding: 50px;

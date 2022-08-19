@@ -14,9 +14,6 @@ body{
     animation: fadeIn;
     animation-timing-function: ease-in;
     animation-duration: 0.5s;
-    /* scroll-snap-type: y mandatory; */
-    /* overflow-y: scroll; */
-    /* overflow-x:hidden; */
 }
 
 body::-webkit-scrollbar{

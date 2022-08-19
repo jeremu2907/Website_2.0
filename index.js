@@ -140,7 +140,7 @@ $(document).ready(function(){
 //This function slides experiences from left to right
 function experienceFadeFromLeft(){
     var scrolled = false;
-    var title = ["#xforce", "#arng", "#numerade", "#mathnasium"];
+    var title = ["#arng", "#xforce", "#numerade", "#mathnasium"];
     var i = 0;
 
     window.addEventListener('scroll',() => {

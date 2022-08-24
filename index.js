@@ -12,10 +12,10 @@ function switchTheme(option){
         document.getElementById("Name").style.backgroundColor = white;
         document.getElementById("message").style.color = black;
         document.getElementById("mainPage").style.backgroundImage = 'url("section1light.jpg")';
-        document.getElementById("media").style.backgroundColor = "rgba(5, 5, 5, 0.5)";
+        document.getElementById("media").style.backgroundColor = "rgba(5, 5, 5, 0.7)";
         document.getElementById("moreInformation").style.backgroundImage = 'url("section2light.jpg")';
-        document.getElementById("skills").style.backgroundColor = "rgba(255, 255, 255, 0.751)"
-        document.getElementById("textBox").style.color = black;
+        document.getElementById("skills").style.backgroundColor = "rgba(255, 255, 255, 0.75)"
+        document.getElementById("textBox").style.color = dark;
         document.getElementById("experience").style.backgroundColor = white;
         document.getElementById("subject").style.color = dark;
         document.getElementById("description").style.color = dark;

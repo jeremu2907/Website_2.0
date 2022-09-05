@@ -11,9 +11,7 @@ function switchTheme(option){
         document.getElementById("smallCirc").style.backgroundColor = white;
         document.getElementById("Name").style.backgroundColor = white;
         document.getElementById("message").style.color = black;
-        document.getElementById("mainPage").style.backgroundImage = 'url("section1light.jpg")';
-        document.getElementById("media").style.backgroundColor = "rgba(5, 5, 5, 0.7)";
-        document.getElementById("moreInformation").style.backgroundImage = 'url("section2light.jpg")';
+        document.getElementById("media").style.backgroundColor = "rgba(50, 50, 50, 0.3)";
         document.getElementById("skills").style.backgroundColor = "rgba(255, 255, 255, 0.75)"
         document.getElementById("textBox").style.color = dark;
         document.getElementById("experience").style.backgroundColor = white;
@@ -33,9 +31,7 @@ function switchTheme(option){
         document.getElementById("scrolldown").style.color = light;
         document.getElementById("Name").style.backgroundColor = dark;
         document.getElementById("message").style.color = light;
-        document.getElementById("mainPage").style.backgroundImage = 'url("section1dark.jpg")';
-        document.getElementById("media").style.backgroundColor = "rgba(5, 5, 5, 0.7)";
-        document.getElementById("moreInformation").style.backgroundImage = 'url("section2dark.jpg")';
+        document.getElementById("media").style.backgroundColor = "rgba(5, 5, 5, 0.3)";
         document.getElementById("skills").style.backgroundColor = "rgba(23, 23, 23, 0.751)"
         document.getElementById("textBox").style.color = light;
         document.getElementById("experience").style.backgroundColor = dark;
@@ -89,7 +85,7 @@ function wait(){
     var scrolled = false;
 
     window.addEventListener('scroll',() => {
-        if (((document.body.scrollTop > 800)  || (document.documentElement.scrollTop > 800)) && scrolled == false){
+        if (((document.body.scrollTop > 790)  || (document.documentElement.scrollTop > 790)) && scrolled == false){
             scrolled = true;
             console.log("Start Terminal Typing Animation")
             //adding a terminal line
@@ -131,15 +127,15 @@ function leftPanelPopOut(){
         
     })
 }
-//This function collapes side bar when mouse leaves the section
-$(document).ready(function(){
-    $("#moreInformation").mouseleave(function(){
-        $("#list").animate({left: '-100%'},1000,"easeInQuart");
-        $("#list2").animate({left: '-100%'},1000,"easeInQuart");
-      $("#skills").animate({left: '-25%'}, 1500, "easeInQuart");
-      console.log("Left Panel In")
-    });
-});
+// //This function collapes side bar when mouse leaves the section
+// $(document).ready(function(){
+//     $("#moreInformation").mouseleave(function(){
+//         $("#list").animate({left: '-100%'},1000,"easeInQuart");
+//         $("#list2").animate({left: '-100%'},1000,"easeInQuart");
+//       $("#skills").animate({left: '-25%'}, 1500, "easeInQuart");
+//       console.log("Left Panel In")
+//     });
+// });
 
 //This function slides experiences from left to right
 function experienceFadeFromLeft(){
@@ -163,12 +159,20 @@ function experienceFadeFromLeft(){
     })
 }
 
+function yumiya(){
+    window.addEventListener('scroll',() => {
+        if ((document.body.scrollTop > 2000  || document.documentElement.scrollTop > 2000)){
+            $("#yumiya").fadeIn(4000)
+        }
+    })
+}
 
 
 //Function Calls
 welcomeMessage();
 wait();
-leftPanelPopOut();
+// leftPanelPopOut();
+yumiya();
 experienceFadeFromLeft();
 ClickListen();
 Arrow();

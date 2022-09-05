@@ -115,9 +115,11 @@ Name
 
 //////////////////////////////////////*/
 .name{
+    position:relative;
     background-color: var(--dark);
     height: 100vh;
     width: 100vw;
+    top: 0px;
 }
 .welcome{
     position: relative;
@@ -187,22 +189,24 @@ SECTION 1
     background-image: url("section1dark.jpg");
     background-color: var(--dark);
     height: 103vh;
-    min-height: 60ch;
     width:100%;
-    background-position: relative;
     background-size:cover;
+    background-repeat:no-repeat;
+    filter: blur(3px)
 }
 .media {
-    position:relative;
-    width:100ch;
-    height: 53ch;
+    position:absolute;
+    width:70vw;
+    height: 65vh;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     color: rgb(210, 209, 209);
     background-color: rgba(5, 5, 5, 0.5);
+    background-image: linear-gradient(rgba(0, 208, 255,0.1),rgba(0, 208, 255,0.0));
     padding: 50px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    border: solid 2px rgb(210, 209, 209);
 }
 .intro {
     font-size: 17px;
@@ -310,16 +314,16 @@ SECTION 2
 .bg-text-left {
     background-color: rgba(23, 23, 23, 0.751);
     position: relative;
-    width: 25%;
+    width: auto;
     height: 100%;
     padding: 0.5px;
-    left:-25%;
+    /* left:-25%; */
 }
 .textBox {
     position:relative;
     color:rgb(151, 151, 151);
-    padding-top: 30%;
-    padding-bottom: 30%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     left:50%;
     transform: translate(-50%);
 }
@@ -334,13 +338,16 @@ SECTION 2
     position:relative;
     font-family: 'Montserrat Alternates', sans-serif;
     text-align:   center;
-    
-    left: -100%;
+    overflow-wrap:normal;
+    /* left: -100%; */
 }
 .list ul{
     list-style-type: none; /* Remove bullets */
     padding: 0;
     /* margin: 0; Remove margins */
+}
+.list li{
+    margin-bottom: 5px;
 }
 
 
@@ -380,6 +387,7 @@ Projects
     font-size: 40px;
     font-family: 'Cairo', sans-serif;
     text-align: center;
+    z-index: 1;
 }
 
 .projectDesc{
@@ -392,6 +400,7 @@ Projects
 
 .kanj{
     font-family: 'Zen Old Mincho', serif;
+    /* animation: fadeIn 3s; */
 }
 
 

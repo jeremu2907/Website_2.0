@@ -110,8 +110,8 @@ function leftPanelPopOut(){
     var scrolled = false;
 
     window.addEventListener('scroll',() => {
-        if (((document.body.scrollTop > 1675 && document.body.scrollTop < 2175)  || 
-            (document.documentElement.scrollTop > 1675 && document.documentElement.scrollTop < 2175)) && scrolled == false){
+        if (((document.body.scrollTop > 1375 && document.body.scrollTop < 2175)  || 
+            (document.documentElement.scrollTop > 1375 && document.documentElement.scrollTop < 2175)) && scrolled == false){
             $("#skills").animate({left: '0%'},1000,"easeOutQuart");
             console.log("Left Panel Out");
     

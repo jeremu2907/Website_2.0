@@ -22,6 +22,8 @@ function switchTheme(option){
         document.getElementById("description2").style.color = dark;
         document.getElementById("description3").style.color = dark;
         document.getElementById("description4").style.color = dark;
+        document.getElementById("project").style.backgroundColor = white;
+        document.getElementById("projectDesc").style.color = dark;
     }
 
     //to dark
@@ -42,6 +44,8 @@ function switchTheme(option){
         document.getElementById("description2").style.color = light;
         document.getElementById("description3").style.color = light;
         document.getElementById("description4").style.color = light;
+        document.getElementById("project").style.backgroundColor = dark;
+        document.getElementById("projectDesc").style.color = light;
     }
 }
 //White and dark mode

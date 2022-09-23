@@ -192,11 +192,9 @@ SECTION 1
     width:100%;
     background-size:cover;
     background-repeat:no-repeat;
-    /* filter: blur(3px) */
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-attachment:fixed; 
+    max-zoom: 1;
 }
 .media::-webkit-scrollbar{
     width: 0px;

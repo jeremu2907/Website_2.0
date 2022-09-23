@@ -196,17 +196,19 @@ SECTION 1
 }
 .media {
     position:absolute;
-    width:70vw;
-    height: 65vh;
+    width:calc(50vw + 100px);
+    height: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: rgb(210, 209, 209);
     background-color: rgba(5, 5, 5, 0.5);
-    background-image: linear-gradient(rgba(0, 208, 255,0.1),rgba(0, 208, 255,0.0));
+    /* background-image: linear-gradient(rgba(0, 208, 255,0.1),rgba(0, 208, 255,0.0)); */
     padding: 50px;
     /* border-radius: 20px; */
     border: solid 2px rgb(210, 209, 209);
+    /* word-wrap:break-word; */
+    overflow-x:hidden;
 }
 .intro {
     font-size: 17px;
@@ -236,7 +238,11 @@ SECTION 1
 }
 /*Social pages*/
 .typing {
+    position:absolute;
     width: 85ch;
+    height: auto;
+    /* width: calc(100% - 100px); */
+    word-wrap: break-word;
     animation: typing 4s steps(39), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -246,6 +252,7 @@ SECTION 1
 /* /*contact* */
 .typing2 {
     width: 62ch;
+    /* width: calc(100% - 100px); */
     animation: typing 2.3s steps(25), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;

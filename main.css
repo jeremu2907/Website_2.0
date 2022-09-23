@@ -192,7 +192,11 @@ SECTION 1
     width:100%;
     background-size:cover;
     background-repeat:no-repeat;
-    filter: blur(3px)
+    /* filter: blur(3px) */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed; 
 }
 .media {
     position:absolute;

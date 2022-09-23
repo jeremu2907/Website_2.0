@@ -12,7 +12,7 @@ function switchTheme(option){
         document.getElementById("Name").style.backgroundColor = white;
         document.getElementById("message").style.color = black;
         document.getElementById("media").style.backgroundColor = "rgba(50, 50, 50, 0.3)";
-        document.getElementById("skills").style.backgroundColor = "rgba(255, 255, 255, 0.75)"
+        document.getElementById("skills").style.backgroundColor = "rgba(100, 100, 100, 0.5)";
         document.getElementById("textBox").style.color = dark;
         document.getElementById("experience").style.backgroundColor = white;
         document.getElementById("subject").style.color = dark;
@@ -32,7 +32,7 @@ function switchTheme(option){
         document.getElementById("Name").style.backgroundColor = dark;
         document.getElementById("message").style.color = light;
         document.getElementById("media").style.backgroundColor = "rgba(5, 5, 5, 0.3)";
-        document.getElementById("skills").style.backgroundColor = "rgba(23, 23, 23, 0.751)"
+        document.getElementById("skills").style.backgroundColor = "rgba(5, 5, 5, 0.3)";
         document.getElementById("textBox").style.color = light;
         document.getElementById("experience").style.backgroundColor = dark;
         document.getElementById("subject").style.color = light;

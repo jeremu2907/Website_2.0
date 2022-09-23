@@ -198,6 +198,14 @@ SECTION 1
     background-size: cover;
     background-attachment:fixed; 
 }
+.media::-webkit-scrollbar{
+    width: 0px;
+    /* background-color: rgb(23,23,23); */
+}
+
+/* body::-webkit-scrollbar-thumb{
+    background-color:rgb(0, 208, 255);
+} */
 .media {
     position:absolute;
     width:calc(65vw + 100px);
@@ -209,7 +217,7 @@ SECTION 1
     background-color: rgba(5, 5, 5, 0.5);
     padding: 50px;
     border: solid 2px rgb(210, 209, 209);
-    overflow-x:hidden;
+    overflow-x:auto;
 }
 .intro {
     font-size: 17px;

@@ -49,9 +49,66 @@ Features
 
 //////////////////////////////////////*/
 
+.navBar{
+    z-index: 10;
+    position: fixed;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    width: 70vw;
+    padding-bottom: 20px;
+    border-bottom: solid #bdbdbd 1px;
+}
+
+.blurDiv{
+    position:absolute;
+    z-index: -1;
+    height:calc(100% + 20px);
+    width: 100%;
+    /* background-color: rgba(0, 208, 255,0.5); */
+    backdrop-filter:blur(2px)
+
+}
+
+.navButton{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    text-align:center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color:#bdbdbd;
+}
+
+.navButton:hover{
+    animation: navHover 0.3s forwards ease-in
+}
+
+@keyframes navHover {
+    0%{
+        color:#bdbdbd;
+    }
+    100%{
+        color:#ffffff;
+    }
+}
+
+@keyframes navHover2 {
+    0%{
+        color:rgb(23,23,23);
+    }
+    100%{
+        color:red;
+    }
+}
+
 .bw{
     position: fixed;
-    top:3%;
+    margin-top:20px;
     right:2%;
     z-index: 100;
     border-radius: 10%;
@@ -206,7 +263,7 @@ SECTION 1
 } */
 .media {
     position:absolute;
-    width:calc(50vw + 100px);
+    width:calc(91ch + 100px);
     height: auto;
     top: 50%;
     left: 50%;
@@ -326,7 +383,7 @@ SECTION 2
 
 /* Side Panels */
 .bg-text-left {
-    background-color: rgba(23, 23, 23, 0.751);
+    background-color: rgba(23, 23, 23, 0.856);
     position: relative;
     width: auto;
     height: 100%;

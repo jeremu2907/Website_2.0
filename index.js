@@ -12,7 +12,7 @@ function switchTheme(option){
         document.getElementById("Name").style.backgroundColor = white;
         document.getElementById("message").style.color = black;
         document.getElementById("media").style.backgroundColor = "rgba(50, 50, 50, 0.3)";
-        document.getElementById("skills").style.backgroundColor = "rgba(100, 100, 100, 0.5)";
+        document.getElementById("skills").style.backgroundColor = "rgba(40, 40, 40, 0.5)";
         document.getElementById("textBox").style.color = dark;
         document.getElementById("experience").style.backgroundColor = white;
         document.getElementById("subject").style.color = dark;
@@ -22,6 +22,14 @@ function switchTheme(option){
         document.getElementById("description4").style.color = dark;
         document.getElementById("project").style.backgroundColor = white;
         document.getElementById("projectDesc").style.color = dark;
+        var cols = document.getElementsByClassName('navButton');
+        for(i = 0; i < cols.length; i++) {
+            cols[i].style.color = dark;
+        }
+        cols = document.getElementsByClassName('navBar');
+        for(i = 0; i < cols.length; i++) {
+            cols[i].style.borderBottom = "solid rgb(23,23,23) 1px";
+        }
     }
 
     //to dark
@@ -32,7 +40,7 @@ function switchTheme(option){
         document.getElementById("Name").style.backgroundColor = dark;
         document.getElementById("message").style.color = light;
         document.getElementById("media").style.backgroundColor = "rgba(5, 5, 5, 0.3)";
-        document.getElementById("skills").style.backgroundColor = "rgba(5, 5, 5, 0.3)";
+        document.getElementById("skills").style.backgroundColor = "rgba(23, 23, 23, 0.856)";
         document.getElementById("textBox").style.color = light;
         document.getElementById("experience").style.backgroundColor = dark;
         document.getElementById("subject").style.color = light;
@@ -42,6 +50,14 @@ function switchTheme(option){
         document.getElementById("description4").style.color = light;
         document.getElementById("project").style.backgroundColor = dark;
         document.getElementById("projectDesc").style.color = light;
+        var cols = document.getElementsByClassName('navButton');
+        for(i = 0; i < cols.length; i++) {
+            cols[i].style.color = light;
+        }
+        cols = document.getElementsByClassName('navBar');
+        for(i = 0; i < cols.length; i++) {
+            cols[i].style.borderBottom = "solid #bdbdbd 1px";
+        }
     }
 }
 //White and dark mode
@@ -171,6 +187,30 @@ function yumiya(){
             $("#yumiya").fadeIn(4000)
         }
     })
+}
+
+function clickWelcome(){
+    document.getElementById("Name").scrollIntoView({behavior: "smooth"})
+}
+
+function clickAbout(){
+    document.getElementById("mainPage").scrollIntoView({behavior: "smooth"})
+    // document.getElementById("message").style.color = "pink"
+}
+
+function clickSkills(){
+    document.getElementById("moreInformation").scrollIntoView({behavior: "smooth"})
+    // document.getElementById("message").style.color = "pink"
+}
+
+function clickProjects(){
+    document.getElementById("project").scrollIntoView({behavior: "smooth"})
+    // document.getElementById("message").style.color = "pink"
+}
+
+function clickExperience(){
+    document.getElementById("experience").scrollIntoView({behavior: "smooth"})
+    // document.getElementById("message").style.color = "pink"
 }
 
 

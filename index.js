@@ -13,7 +13,7 @@ function switchTheme(option){
         document.getElementById("message").style.color = black;
         document.getElementById("media").style.backgroundColor = "rgba(50, 50, 50, 0.3)";
         document.getElementById("skills").style.backgroundColor = "rgba(40, 40, 40, 0.5)";
-        document.getElementById("textBox").style.color = dark;
+        // document.getElementById("textBox").style.color = dark;
         document.getElementById("experience").style.backgroundColor = white;
         document.getElementById("subject").style.color = dark;
         document.getElementById("description").style.color = dark;
@@ -29,6 +29,7 @@ function switchTheme(option){
         cols = document.getElementsByClassName('navBar');
         for(i = 0; i < cols.length; i++) {
             cols[i].style.borderBottom = "solid rgb(23,23,23) 1px";
+            // cols[i].style.backgroundImage = "linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,0.5),rgba(255,255,255,0.5)";
         }
     }
 
@@ -57,6 +58,7 @@ function switchTheme(option){
         cols = document.getElementsByClassName('navBar');
         for(i = 0; i < cols.length; i++) {
             cols[i].style.borderBottom = "solid #bdbdbd 1px";
+            // cols[i].style.backgroundImage = "linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,0.0))";
         }
     }
 }

@@ -11,8 +11,9 @@ function switchTheme(option){
         document.getElementById("smallCirc").style.backgroundColor = white;
         document.getElementById("Name").style.backgroundColor = white;
         document.getElementById("message").style.color = black;
-        document.getElementById("media").style.backgroundColor = "rgba(50, 50, 50, 0.3)";
-        document.getElementById("skills").style.backgroundColor = "rgba(40, 40, 40, 0.5)";
+        // document.getElementById("terminalBG").style.backgroundImage = "url('section1light.jpg')"
+        // document.getElementById("media").style.backgroundColor = "rgba(50, 50, 50, 0.7)";
+        // document.getElementById("skills").style.backgroundColor = "rgba(40, 40, 40, 0.5)";
         // document.getElementById("textBox").style.color = dark;
         document.getElementById("experience").style.backgroundColor = white;
         document.getElementById("subject").style.color = dark;
@@ -40,8 +41,9 @@ function switchTheme(option){
         document.getElementById("scrolldown").style.color = light;
         document.getElementById("Name").style.backgroundColor = dark;
         document.getElementById("message").style.color = light;
-        document.getElementById("media").style.backgroundColor = "rgba(5, 5, 5, 0.3)";
-        document.getElementById("skills").style.backgroundColor = "rgba(23, 23, 23, 0.856)";
+        // document.getElementById("terminalBG").style.backgroundImage = "url('section1dark.jpg')"
+        // document.getElementById("media").style.backgroundColor = "rgba(5, 5, 5, 0.3)";
+        // document.getElementById("skills").style.backgroundColor = "rgba(23, 23, 23, 0.856)";
         document.getElementById("textBox").style.color = light;
         document.getElementById("experience").style.backgroundColor = dark;
         document.getElementById("subject").style.color = light;

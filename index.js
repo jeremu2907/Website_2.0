@@ -89,15 +89,19 @@ function Arrow(){
 }
 
 //Chaning Hello
-function welcomeMessage(){
-    var welcome = ["Hello!","こんにちは!","Xin Chào!"]
-    var i = 0;
+function welcomeMessage(i){
+    var welcome = ["こんにちは!","Xin Chào!","Hello!"]
     setTimeout(() => {
-        setInterval(() =>{
-            document.getElementById("welcomeMessage").innerHTML = welcome[i%3];
-            i++;
-        },2500);    
-    },1000);
+            $("#welcomeMessage").animate({
+                opacity: "0"
+            },1000,() => {
+                document.getElementById("welcomeMessage").innerHTML = welcome[i%3];
+                i++;
+                $("#welcomeMessage").animate({
+                    opacity: "1"
+                },1000,welcomeMessage(i))
+            });   
+    },1500);
 }
 
 //This function displays the terminal animation on screen
@@ -219,7 +223,10 @@ function clickExperience(){
 
 
 //Function Calls
-welcomeMessage();
+setTimeout(() => {
+    welcomeMessage(0);
+}, 2800);
+
 wait();
 // leftPanelPopOut();
 yumiya();

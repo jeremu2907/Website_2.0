@@ -211,9 +211,9 @@ Name
         opacity: 0;
         top: -100vh;
     }
-    30%{
+    /* 30%{
         opacity:0;
-    }
+    } */
     100%{
         opacity: 1;
         top:0%;

@@ -265,8 +265,7 @@ SECTION 1
 }
 .media {
     position:relative;
-    width:70%;
-    max-width: 102ch;
+    width:110ch;
     height: auto;
     color: rgb(210, 209, 209);
     background-color: rgba(5, 5, 5, 0.5);

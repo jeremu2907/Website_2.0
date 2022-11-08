@@ -123,13 +123,13 @@ function wait(){
             },300);
 
             setTimeout(() => {
-                document.getElementById("animate").innerHTML = "<div class='typing2 intro'><m style='color: #65a450'>me@MyWebSite</m>:<m style='color: #397e9c ''>/JEREMY_NGUYEN</m>$ Email me at <a href='mailto:jeremu2907@gmail.com? target='_blank'' style='color:rgb(210, 209, 209);'>jeremu2907@gmail.com</a><div>"
+                document.getElementById("animate").innerHTML = "<div class='typing2 intro'><m style='color: #65a450'>me@MyWebSite</m>:<m style='color: #397e9c ''>/JEREMY_NGUYEN</m>$ Email me at <a href='mailto:jeremu2907@gmail.com? target='_blank'' style='color:rgb(100,100,100);'>jeremu2907@gmail.com</a><div>"
             },6300)
 
             setTimeout(() => {
                 document.getElementById("animate").style.height = "auto";
                 document.getElementById("animate").innerHTML = "";
-                document.getElementById("disp1").innerHTML = "<m style='color: #65a450'>me@MyWebSite</m>:<m style='color: #397e9c '>/JEREMY_NGUYEN</m>$ Email me at <a href='mailto:jeremu2907@gmail.com? target='_blank'' style='color:rgb(210, 209, 209);'>jeremu2907@gmail.com</a>";
+                document.getElementById("disp1").innerHTML = "<m style='color: #65a450'>me@MyWebSite</m>:<m style='color: #397e9c '>/JEREMY_NGUYEN</m>$ Email me at <a href='mailto:jeremu2907@gmail.com? target='_blank'' style='color:rgb(100,100,100);'>jeremu2907@gmail.com</a>";
             }, 12300);
         }
     })

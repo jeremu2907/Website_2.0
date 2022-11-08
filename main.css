@@ -265,16 +265,25 @@ SECTION 1
 }
 .media {
     position:relative;
-    width:110ch;
+    width:calc(84ch + 8vw);
+    max-width: 90vw;
     height: auto;
-    color: rgb(210, 209, 209);
-    background-color: rgba(5, 5, 5, 0.5);
-    padding: 50px;
-    border: solid 5px white;
+    color: var(--dark);
+    background-color: rgb(255, 255, 255);
+    padding: 4vw;
+    border-radius: 20px;
     overflow-x:auto;
+    box-shadow: 0px 0px rgba(20,20,20,0.4);
+    transition: box-shadow 0.3s ease-out, margin 0.3s ease-out;
+    /* font-weight:bold; */
+}
+.media:hover{
+    box-shadow: 10px 10px rgba(20,20,20,0.4);
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 .intro {
-    font-size: 17px;
+    font-size: 2vh;
     font-family: 'Courier New', monospace;
 }
 .container {
@@ -303,8 +312,7 @@ SECTION 1
 .typing {
     position:absolute;
     width: 85ch;
-    height: auto;
-    /* width: calc(100% - 100px); */
+    /* height: auto; */
     word-wrap: break-word;
     animation: typing 4s steps(39), blink .5s step-end infinite alternate;
     white-space: nowrap;

@@ -39,7 +39,7 @@
                     <div id="welcomeMessage">Hello!</div>
                 </div>
                 <div id="message" class="exp_p message">
-                    <h>Welcome to my website</h>
+                    <h style="font-size: calc((2vh + 3vw)/2)">Welcome to my website</h>
                 </div>
             </div>
         </section>
@@ -48,13 +48,12 @@
             <div id="terminalBG" class="bg-image">
                 <!-- Typing screen -->
                 <div id="media" class="media">
-                    <div class="intro">
-                        <m style="color: #65a450">me@MyWebSite</m>:<m class="tooltip" style="color: #397e9c ">/JEREMY_NGUYEN<span class="tooltiptext">This is my name</span></m>$ cat intro.txt
+                    <div class="intro" id="intro">
+                        <!-- <m style="color: #ffffff">me@MyWebSite</m>:<m class="tooltip" style="color: #397e9c ">/JEREMY_NGUYEN<span class="tooltiptext">This is my name</span></m>$ cat intro.txt
                         <br><br>
-                        Hi, I'm Jeremy Nguyen and I am a computer science student at UT Dallas
+                        Hi, I'm <r style="color:white">Jeremy Nguyen</r> and I am a computer science student at <r style="color:orange">UT Dallas</r>
                         <br>
                         I also work at the Texas Army National Guard as a construction engineer
-                        <!-- I am experienced in C, C++, Java, and JavaScript -->
                         <br><br>
                         If you would like to know more about me, please take a look at my 
                         <a href="./JeremyNguyenResume.pdf" class="link3 tooltip"target="_blank"><u style="text-decoration:none;">resume
@@ -62,14 +61,16 @@
                         </a><br><br>
                         <m id="disp"></m>
                         <m id="disp1"></m>
-                        <div id="animate" style="height:25px">
+                        <div id="animate" style="height:2vh;">
                             <div class="typing0">
-                                <m style="color: #65a450">me@MyWebSite</m>:<m style="color: #397e9c ">/JEREMY_NGUYEN</m>$
+                                <m style="color: #ffffff">me@MyWebSite</m>:<m style="color: #397e9c ">/JEREMY_NGUYEN</m>$
                             </div>
                             <br>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
+
+                <div id="clickBox" onclick="openterminal()"></div>
             </div>
         </section>
 
@@ -146,8 +147,8 @@
         <!--Experience-->
         <section id="experience" class=" exp">
             <div>
-                <div class="exp_title" style="color:rgb(0, 208, 255); font-size: 40px"><h>Experience</h></div><br>
-                <div id="subject" class="exp_p"><h>Come along to see my journey, so far</h></div>
+                <div class="exp_title" style="color:rgb(0, 208, 255); font-size:4vh"><h>Experience</h></div><br>
+                <div id="subject" class="exp_p"><h style="font-size: 3vh;">Come along to see my journey, so far</h></div>
             </div>
 
             <div>

@@ -1,3 +1,10 @@
+window.addEventListener('scroll',() => {
+    if ((document.body.scrollTop > 100  || document.documentElement.scrollTop > 100)){
+        $("#yumiya").fadeIn(4000)
+        console.log("yumiya")
+    }
+})
+
 function switchTheme(option){
     let white = "white";
     let black = "black";
@@ -23,15 +30,15 @@ function switchTheme(option){
         document.getElementById("description4").style.color = dark;
         document.getElementById("project").style.backgroundColor = white;
         document.getElementById("projectDesc").style.color = dark;
-        var cols = document.getElementsByClassName('navButton');
-        for(i = 0; i < cols.length; i++) {
-            cols[i].style.color = dark;
-        }
-        cols = document.getElementsByClassName('navBar');
-        for(i = 0; i < cols.length; i++) {
-            cols[i].style.borderBottom = "solid rgb(23,23,23) 1px";
-            // cols[i].style.backgroundImage = "linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,0.5),rgba(255,255,255,0.5)";
-        }
+        // var cols = document.getElementsByClassName('navButton');
+        // for(i = 0; i < cols.length; i++) {
+        //     cols[i].style.color = dark;
+        // }
+        // cols = document.getElementsByClassName('navBar');
+        // for(i = 0; i < cols.length; i++) {
+        //     cols[i].style.borderBottom = "solid rgb(23,23,23) 1px";
+        //     // cols[i].style.backgroundImage = "linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,0.5),rgba(255,255,255,0.5)";
+        // }
     }
 
     //to dark
@@ -53,15 +60,15 @@ function switchTheme(option){
         document.getElementById("description4").style.color = light;
         document.getElementById("project").style.backgroundColor = dark;
         document.getElementById("projectDesc").style.color = light;
-        var cols = document.getElementsByClassName('navButton');
-        for(i = 0; i < cols.length; i++) {
-            cols[i].style.color = light;
-        }
-        cols = document.getElementsByClassName('navBar');
-        for(i = 0; i < cols.length; i++) {
-            cols[i].style.borderBottom = "solid #bdbdbd 1px";
-            // cols[i].style.backgroundImage = "linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,0.0))";
-        }
+        // var cols = document.getElementsByClassName('navButton');
+        // for(i = 0; i < cols.length; i++) {
+        //     cols[i].style.color = light;
+        // }
+        // cols = document.getElementsByClassName('navBar');
+        // for(i = 0; i < cols.length; i++) {
+        //     cols[i].style.borderBottom = "solid #bdbdbd 1px";
+        //     // cols[i].style.backgroundImage = "linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,0.0))";
+        // }
     }
 }
 //White and dark mode
@@ -106,33 +113,36 @@ function welcomeMessage(i){
 
 //This function displays the terminal animation on screen
 function wait(){
-    var scrolled = false;
+    document.getElementById("intro").style.opacity = "1";
+    document.getElementById("animate").style.opacity = "1";
+    // var scrolled = false;
 
-    window.addEventListener('scroll',() => {
-        if (((document.body.scrollTop > 790)  || (document.documentElement.scrollTop > 790)) && scrolled == false){
-            scrolled = true;
+    // window.addEventListener('scroll',() => {
+        // if (((document.body.scrollTop > 790)  || (document.documentElement.scrollTop > 790)) && scrolled == false){
+            // scrolled = true;
             console.log("Start Terminal Typing Animation")
             //adding a terminal line
             setTimeout(() => {
-            document.getElementById("disp").innerHTML = "<m style='color: #65a450'>me@MyWebSite</m>:<m style='color: #397e9c '>/JEREMY_NGUYEN</m>$ More about me and my projects on my <a href='https://www.linkedin.com/in/jeremu2907/' class='link' target='_blank'>LinkedIn</a> and <a href='https://github.com/jeremu2907' class='link2' target='_blank'>GitHub</a><br><br>";
+                document.getElementById("disp").innerHTML = "<m style='color: #ffffff'>me@MyWebSite</m>:<m style='color: #397e9c '>/JEREMY_NGUYEN</m>$ More about me and my projects on my <a href='https://www.linkedin.com/in/jeremu2907/' class='link' target='_blank'>LinkedIn</a> and <a href='https://github.com/jeremu2907' class='link2' target='_blank'>GitHub</a><br><br>";
             }, 6300);
             
             //Creating new terminal line
             setTimeout(() => {
-                document.getElementById("animate").innerHTML = "<div class='typing intro'><m style='color: #65a450'>me@MyWebSite</m>:<m style='color: #397e9c '>/JEREMY_NGUYEN</m>$ <span>More about me and my projects on my<a href='https://www.linkedin.com/in/jeremu2907/' class='link' target='_blank'> LinkedIn</a> and <a href='https://github.com/jeremu2907' class='link2' target='_blank'>GitHub</a></span></div><br>"
+                document.getElementById("animate").innerHTML = "<div class='typing intro'><m style='color: #ffffff'>me@MyWebSite</m>:<m style='color: #397e9c '>/JEREMY_NGUYEN</m>$ <span>More about me and my projects on my<a href='https://www.linkedin.com/in/jeremu2907/' class='link' target='_blank'> LinkedIn</a> and <a href='https://github.com/jeremu2907' class='link2' target='_blank'>GitHub</a></span></div><br>"
             },300);
 
             setTimeout(() => {
-                document.getElementById("animate").innerHTML = "<div class='typing2 intro'><m style='color: #65a450'>me@MyWebSite</m>:<m style='color: #397e9c ''>/JEREMY_NGUYEN</m>$ Email me at <a href='mailto:jeremu2907@gmail.com? target='_blank'' style='color:rgb(210, 209, 209);'>jeremu2907@gmail.com</a><div>"
+                document.getElementById("media").style.maxHeight = "1000px";
+                document.getElementById("animate").innerHTML = "<div class='typing2 intro'><m style='color: #ffffff'>me@MyWebSite</m>:<m style='color: #397e9c ''>/JEREMY_NGUYEN</m>$ Email me at <a href='mailto:jeremu2907@gmail.com? target='_blank'' style='color:rgb(250,250,250);'>jeremu2907@gmail.com</a><div>"
             },6300)
 
             setTimeout(() => {
                 document.getElementById("animate").style.height = "auto";
                 document.getElementById("animate").innerHTML = "";
-                document.getElementById("disp1").innerHTML = "<m style='color: #65a450'>me@MyWebSite</m>:<m style='color: #397e9c '>/JEREMY_NGUYEN</m>$ Email me at <a href='mailto:jeremu2907@gmail.com? target='_blank'' style='color:rgb(210, 209, 209);'>jeremu2907@gmail.com</a>";
+                document.getElementById("disp1").innerHTML = "<m style='color: #ffffff'>me@MyWebSite</m>:<m style='color: #397e9c ''>/JEREMY_NGUYEN</m>$ Email me at <a href='mailto:jeremu2907@gmail.com? target='_blank'' style='color:rgb(250,250,250);'>jeremu2907@gmail.com</a>";
             }, 12300);
-        }
-    })
+        // }
+    // })
 }
 
 //This function display the side bar in section 2
@@ -189,14 +199,6 @@ function experienceFadeFromLeft(){
     })
 }
 
-function yumiya(){
-    window.addEventListener('scroll',() => {
-        if ((document.body.scrollTop > 2000  || document.documentElement.scrollTop > 2000)){
-            $("#yumiya").fadeIn(4000)
-        }
-    })
-}
-
 function clickWelcome(){
     document.getElementById("Name").scrollIntoView({behavior: "smooth"})
 }
@@ -227,9 +229,48 @@ setTimeout(() => {
     welcomeMessage(0);
 }, 2800);
 
-wait();
-// leftPanelPopOut();
-yumiya();
-experienceFadeFromLeft();
 ClickListen();
 Arrow();
+
+var terminal = false;
+function openterminal(){
+    document.getElementById("clickBox").style.backgroundColor = "rgba(21, 21, 21, 0.842)";
+    document.getElementById("clickBox").style.width = "0px";
+    document.getElementById("clickBox").style.height = "8vw";
+
+    if(terminal === true)
+        return;
+
+    setTimeout(() => {
+        terminal = true;
+        console.log("clicked")
+        document.getElementById("media").style.width = "calc(84ch + 8vw)";
+        // document.getElementById("media").style.height = "auto";
+        setTimeout(() => {
+            document.getElementById("media").style.padding = "4vw";
+            document.getElementById("intro").innerHTML = `<m style="color: #ffffff">me@MyWebSite</m>:<m class="tooltip" style="color: #397e9c ">/JEREMY_NGUYEN<span class="tooltiptext">This is my name</span></m>$ cat intro.txt
+            <br><br>
+            Hi, I'm <r style="color:white">Jeremy Nguyen</r> and I am a computer science student at <r style="color:orange">UT Dallas</r>
+            <br>
+            I also work at the Texas Army National Guard as a construction engineer
+            <!-- I am experienced in C, C++, Java, and JavaScript -->
+            <br><br>
+            If you would like to know more about me, please take a look at my 
+            <a href="./JeremyNguyenResume.pdf" class="link3 tooltip"target="_blank"><u style="text-decoration:none;">resume
+                <span class="tooltiptext">This is my resume</span></u>
+            </a><br><br>
+            <m id="disp"></m>
+            <m id="disp1"></m>
+            <div id="animate" style="height:2vh;">
+                <div class="typing0">
+                    <m style="color: #ffffff">me@MyWebSite</m>:<m style="color: #397e9c ">/JEREMY_NGUYEN</m>$
+                </div>
+                <br>
+            </div>`
+            document.getElementById("intro").style.opacity = "1";
+            document.getElementById("animate").style.opacity = "1";
+            document.getElementById("media").style.maxHeight = "900px";
+            setTimeout(wait(), 1000);
+        }, 1000)
+    },300);
+}

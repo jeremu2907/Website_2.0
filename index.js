@@ -250,7 +250,10 @@ function openterminal(){
     setTimeout(() => {
         terminal = true;
         console.log("clicked")
-        document.getElementById("media").style.width = "calc(84ch + 8vw)";
+        if($(window).width() < $(window).height())
+            document.getElementById("media").style.width = 'calc(8vw + 84ch)';
+        else
+            document.getElementById("media").style.width = '65vw'
         // document.getElementById("media").style.height = "auto";
         setTimeout(() => {
             document.getElementById("media").style.padding = "4vw";

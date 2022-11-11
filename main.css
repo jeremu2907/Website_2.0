@@ -528,7 +528,7 @@ SECTION 3
 .bg-image3 {
     position:absolute;
     background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("section1dark.jpg");
-    transform: translateZ(-1px) scale(2.52);
+    transform: translateZ(-1px) scale(2.7);
     z-index: -6;
     top:-125vh;
     height: 100%;
@@ -608,7 +608,7 @@ SECTION 3
     background-attachment:fixed; 
     position:relative;
     width: 100vw;
-    padding: 100px;
+    padding: 150px;
     padding-left: 60px;
     height:auto;
     background-color: var(--dark);

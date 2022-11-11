@@ -1,9 +1,10 @@
-window.addEventListener('scroll',() => {
-    if ((document.body.scrollTop > 100  || document.documentElement.scrollTop > 100)){
-        $("#yumiya").fadeIn(4000)
-        console.log("yumiya")
-    }
-})
+// window.addEventListener('scroll',() => {
+//     // if ((document.body.scrollTop > 100  || document.documentElement.scrollTop > 100)){
+//     //     $("#yumiya").fadeIn(4000)
+//     //     console.log("yumiya")
+//     // }
+//     console.log(document.body.scrollTop)
+// })
 
 function switchTheme(option){
     let white = "white";
@@ -209,7 +210,7 @@ function clickAbout(){
 }
 
 function clickSkills(){
-    document.getElementById("moreInformation").scrollIntoView({behavior: "smooth"})
+    document.getElementById("skills").scrollIntoView({behavior: "smooth"})
     // document.getElementById("message").style.color = "pink"
 }
 
@@ -234,7 +235,12 @@ Arrow();
 
 var terminal = false;
 function openterminal(){
-    document.getElementById("clickBox").style.backgroundColor = "rgba(21, 21, 21, 0.842)";
+    $("#clickBox").css("-webkit-animation", "none");
+    $("#clickBox").css("-moz-animation", "none");
+    $("#clickBox").css("-ms-animation", "none");
+    $("#clickBox").css("animation", "none");
+    
+    document.getElementById("clickBox").style.backgroundColor = "rgba(0,0,0,1)";
     document.getElementById("clickBox").style.width = "0px";
     document.getElementById("clickBox").style.height = "8vw";
 

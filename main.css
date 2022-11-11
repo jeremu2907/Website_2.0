@@ -600,19 +600,41 @@ SECTION 3
 }
 
 
+/*////////////////////////////////////// 
+
+
+SECTION 4
+
+
+//////////////////////////////////////*/
+#lastPage{
+    position: relative;
+    z-index: 9999999;
+    height: 100vh;
+    background-color: var(--dark);
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    overscroll-behavior: contain;
+}
+
 .exp_quoteBlock{
     color: var(--light);
     position:relative;
-    width: 100vw;
-    padding: 150px;
+    width: auto;
     padding-left: 60px;
     height:auto;
-    background-color: var(--dark);
-    z-index: 99999999;
 }
 .quote{
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-size: 25px;
 }
-
+#thank{
+    position: relative;
+    font-family: 'Cairo', sans-serif;
+    margin: 0 auto 0 auto;
+    font-size: 7vh;
+    color:rgb(0, 208, 255);
+}

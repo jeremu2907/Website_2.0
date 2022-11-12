@@ -302,7 +302,7 @@ SECTION 1
     overflow-x: hidden;
     border-radius: 20px;
     transition: width 1s ease-in-out, max-height 0.5s ease-in-out;
-    box-shadow: 20px 20px rgba(0, 0, 0, 0.455);
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.455);
 }
 
 .intro {

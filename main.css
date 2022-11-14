@@ -437,7 +437,7 @@ SECTION 2
     left:50%;
     transform: translate(-50%);
     box-shadow: 15px 25px 15px 10px rgba(0, 0, 0, 0.521);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
 }
 .title{
     color: rgb(0, 208, 255);

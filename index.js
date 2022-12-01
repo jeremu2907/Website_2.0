@@ -243,6 +243,7 @@ function openterminal(){
     document.getElementById("clickBox").style.backgroundColor = "rgba(0,0,0,1)";
     document.getElementById("clickBox").style.width = "0px";
     document.getElementById("clickBox").style.height = "8vw";
+    document.getElementById("clickBox").innerText = "";
 
     if(terminal === true)
         return;

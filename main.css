@@ -250,6 +250,7 @@ SECTION 1
     justify-content: center;
     color:white;
     font-size: 30px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.455)
 }
 
 @keyframes jump {
@@ -510,6 +511,7 @@ Projects
 
 .tryProject{
     text-decoration: none;
+    z-index: 1000;
     transition: color 0.5s ease, border 0.5s ease;
     border: solid var(--lightText) 1px;
     padding: 5px;

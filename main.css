@@ -54,9 +54,9 @@ Features
 //////////////////////////////////////*/
 
 .navBar{
-    position: fixed;
+    position: sticky;
+    top: 0px;
     z-index: 10000000;
-    padding-top:20px;
     left: 50%;
     transform: translate(-50%);
     display:flex;
@@ -64,7 +64,7 @@ Features
     justify-content: space-evenly;
     height: auto;
     width: 70vw;
-    padding-bottom: 20px;
+    padding: 10px 0 10px 0;
     border-bottom: solid #bdbdbd 1px;
     backdrop-filter: blur(2px);
 }
@@ -506,6 +506,21 @@ Projects
     color:#bdbdbd;
     width: 40%;
     height:auto;
+}
+
+.tryProject{
+    text-decoration: none;
+    transition: color 0.5s ease, border 0.5s ease;
+    border: solid var(--lightText) 1px;
+    padding: 5px;
+    width: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tryProject:hover{
+    color: rgb(0, 208, 255);
+    border: solid rgb(0, 208, 255) 1px;
 }
 
 .kanj{

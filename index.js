@@ -215,7 +215,7 @@ function clickSkills(){
 }
 
 function clickProjects(){
-    document.getElementById("project").scrollIntoView({behavior: "smooth"})
+    document.getElementById("projectSection").scrollIntoView({behavior: "smooth"})
     // document.getElementById("message").style.color = "pink"
 }
 

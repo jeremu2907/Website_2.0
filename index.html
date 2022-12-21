@@ -69,7 +69,7 @@
                     </div>
                 </div>
 
-                <div id="clickBox" onclick="openterminal()">⏻</div>
+                <div id="clickBox" onclick="openterminal()">&#x23FB</div>
             </div>
         </section>
         <!--Next Page-->
@@ -109,17 +109,17 @@
             </div>
         </section>
 
-        <section>
-            <div class="project" id="project">
+        <section> <div  id="projectSection">
+            <div class="project">
                 <div style="font-size: 300px;
                                 position:absolute;
                                 color:rgba(255,255,255,0.13);
                                 z-index: 0;
-                                filter:blur(2px);"
+                                filter:blur(5px);"
                      id="yumiya">
                         <h class="kanj">弓矢</h>
                 </div>
-                <div style="display: flex; flex-direction: column">
+                <div style="display: flex; flex-direction: column; margin-bottom: auto;">
                     <h class="projectTitle">Project Yumiya</h>
                     <a href="https://yumiya.netlify.app/" class="projectDesc tryProject" target="_blank">Try out this project!</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTU8_fapXGJBWNMdxHji_uxvlhsEup2iVvXdYrKQG9zprPuA/viewform?usp=sf_link" 
@@ -127,13 +127,13 @@
                 </div>
                 <div class="projectDesc" id="projectDesc">
                     <p>
-                        I am working on a productivity application that aims to strengthen
+                        I created a productivity application that aims to strengthen
                         users' time management by highlighting daily events, providing a quick 
                         note-taking space, and providing insights to potential unexpected risks
                     </p>
                     <p>
-                        This program is written in ReactJS and utilizes the Google Calendar,
-                        Google Maps, and OpenWeatherMap APIs
+                        This program is written in ReactJS, ExpressJS and integrates the Google Calendar,
+                        Google Maps, OpenWeatherMap APIs, as well as MongoDB
                     </p>
                     <p>
                         Yumiya <r class="kanj">( 弓矢 )</r> in Japanese means bow and arrow. To have the most beautiful and perfect shots, the archer must 
@@ -142,7 +142,64 @@
                     </p>
                 </div>
             </div>
-        </section>
+            <div class = "bar"></div>
+            <div class="project">
+                <div style="font-size: 500px;
+                                position:absolute;
+                                color:rgba(255,255,255,0.13);
+                                z-index: 0;
+                                filter:blur(5px);"
+                     id="yumiya">
+                        <h class="kanj">&#x269B</h>
+                </div>
+                <div style="display: flex; flex-direction: column; margin-bottom: auto;">
+                    <h class="projectTitle">Physics Engine</h>
+                    <a href="https://github.com/jeremu2907/particlePhysics" class="projectDesc tryProject" target="_blank">Source code on GitHub</a>
+                </div>
+                <div class="projectDesc">
+                    <p>
+                        In the pursuit knowledge in Mathematics and Physics, I am writing 
+                        a physics engine from scratch. I don't know where this project will be heading,
+                        but I expect to learn a lot from this
+                    </p>
+                    <p>
+                        This engine uses C++, for now
+                    </p>
+                </div>
+            </div>
+            <div class = "bar"></div>
+            <div class="project">
+                <div style="font-size: 400px;
+                                position:absolute;
+                                color:rgba(255,255,255,0.13);
+                                z-index: 0;
+                                filter:blur(15px);"
+                     id="yumiya">
+                        <h class="kanj">&#x271A</h>
+                </div>
+                <div style="display: flex; flex-direction: column; margin-bottom: auto;">
+                    <h class="projectTitle">Waddle</h>
+                    <a href="https://github.com/jeremu2907/Waddle" class="projectDesc tryProject" target="_blank">Source code on GitHub</a>
+                </div>
+                <div class="projectDesc">
+                    <p>
+                        Hosting and applying for volunteering opportunities should be easy instead of having to search accross
+                        multiple decentralized, un-organized sources
+                    </p>
+                    <p>
+                        In the effort to solve this problem, I and my team made
+                        a web application that streamlines the process of organizing and applying to local volunteering events
+                        during HackUTD
+                    </p>
+                    <p>
+                        This application is written in vanilla JavaScript, HTML, CSS for front-end, 
+                        Python for back-end, and utilizes MongoDB as the database
+                    </p>
+                </div>
+            </div>
+
+            
+        </div></section>
 
         <!--Experience-->
         <section id="experience" class=" exp">

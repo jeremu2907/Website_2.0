@@ -266,7 +266,7 @@ function openterminal(){
             <!-- I am experienced in C, C++, Java, and JavaScript -->
             <br><br>
             If you would like to know more about me, please take a look at my 
-            <a href="./JeremyNguyenResume.pdf" class="link3 tooltip"target="_blank"><u style="text-decoration:none;">resume
+            <a href="NewResume.pdf" class="link3 tooltip"target="_blank"><u style="text-decoration:none;">resume
                 <span class="tooltiptext">This is my resume</span></u>
             </a><br><br>
             <m id="disp"></m>

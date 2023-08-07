@@ -64,10 +64,6 @@ body p {
     justify-content: space-evenly;
 }
 
-/* #tech-info > div {
-    width:0
-} */
-
 #profile-img-container {
     flex:1;
     display: flex;

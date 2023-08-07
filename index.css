@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
 :root{
     --accent-blue: rgb(0, 177, 217);
+    --accent-orange: rgb(255, 145, 0);
     --dark: rgb(32, 32, 32);
     --light: white;
     --light-bg: rgb(243, 243, 243);
     --light-clr-bg: rgba(255, 255, 255, 0.562);
     --lightText:#bdbdbd;
-    --darkText: rgb(23,23,23);
+    --darkText: rgb(59, 59, 59);
 }
 
 body{
@@ -18,7 +20,8 @@ body{
 }
 
 body h1 {
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vh;
     font-weight: 600;
     color: var(--accent-blue)
 }
@@ -26,6 +29,8 @@ body h1 {
 body p {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
+    font-size: 17px;
+    color: var(--darkText)
 }
 
 #main {
@@ -61,7 +66,7 @@ body p {
 
 #tech-info {
     flex: 2;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #profile-img-container {
@@ -88,7 +93,7 @@ body p {
 }
 
 #profile-edu {
-    color: rgb(255, 145, 0)
+    color: var(--accent-orange)
 }
 
 #skills-container {
@@ -102,12 +107,16 @@ body p {
 #skills-container > div {
     white-space: nowrap;
     border-radius: 10px;
-    border: solid 2px var(--dark);
+    border: solid 2px var(--darkText);
     width: auto;
-    padding: 0 30px 0 30px;
+    padding: 0 20px;
     text-align: center;
     transition: background-color 0.2s, color 0.23s;
     background-color: rgba(0,0,0,0);
+}
+
+#skills-container > div > p {
+    margin: 0;
 }
 
 #C:hover{
@@ -144,13 +153,13 @@ body p {
     background-color: rgb(90, 255, 49);
 }
 #FULLSTACK:hover{
-    background-color: rgb(23,23,23);
-    color: var(--lightText)
+    background-color: rgb(255, 206, 122);
 }
 
 #exp-container {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 .exp-item {
@@ -162,6 +171,10 @@ body p {
 
 .exp-item p {
     margin: 5px 0
+}
+
+.exp-item span {
+    color: var(--accent-orange)
 }
 
 .exp-title {

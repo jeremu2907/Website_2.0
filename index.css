@@ -106,6 +106,46 @@ body p {
     width: auto;
     padding: 0 30px 0 30px;
     text-align: center;
+    transition: background-color 0.2s, color 0.23s;
+    background-color: rgba(0,0,0,0);
+}
+
+#C:hover{
+    background-color: rgb(80, 188, 255);
+}
+#JAVA:hover{
+    background-color: rgb(255, 87, 26);
+}
+#JS:hover{
+    background-color: rgb(222, 200, 0);
+}
+#TS:hover{
+    background-color: rgb(138, 149, 255);
+}
+#PY:hover{
+    background-color: rgb(104, 172, 255);
+}
+#HTML:hover{
+    background-color: rgb(255, 128, 49);
+}
+#CSS:hover{
+    background-color: rgb(133, 226, 255);
+}
+#REACT:hover{
+    background-color: rgb(0, 255, 242);
+}
+#DOCKER:hover{
+    background-color: rgb(56, 136, 206);
+}
+#LINUX:hover{
+    background-color: rgb(159, 99, 255);
+}
+#NGINX:hover{
+    background-color: rgb(90, 255, 49);
+}
+#FULLSTACK:hover{
+    background-color: rgb(23,23,23);
+    color: var(--lightText)
 }
 
 #exp-container {

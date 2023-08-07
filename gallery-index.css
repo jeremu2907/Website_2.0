@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap');
+
+:root{
+    --accent-blue: rgb(0, 177, 217);
+    --accent-orange: rgb(255, 145, 0);
+    --dark: rgb(32, 32, 32);
+    --light: white;
+    --light-bg: rgb(243, 243, 243);
+    --light-clr-bg: rgba(255, 255, 255, 0.787);
+    --lightText:#bdbdbd;
+    --darkText: rgb(59, 59, 59);
+}
+
+::-webkit-scrollbar{
+    background-color: var(--accent-blue);
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--accent-orange);
+    border-radius: 1.5px;
+}
+
+body{
+    background-color: var(--dark);
+    margin: 0;
+    height: auto;
+}
+
+body h1 {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 4vh;
+    font-weight: 500;
+    color: var(--accent-blue)
+}
+
+body p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--lightText)
+}
+
+section {
+    background-color: var(--dark);
+}
+
+#intro-gallery{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px
+}
+
+#intro-gallery p{
+    color: var(--accent-orange)
+}
+
+#main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px
+}
+
+#main img {
+    width: 40vw;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    transition: width 0.3s, height 0.3s, box-shadow 0.3s;
+}
+
+#main img:hover  {
+    width: 43vw;
+    box-shadow: 20px 20px 20px black;
+}
+
+.photo-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 400px){
+    #main > div {
+        flex:none;
+        width: calc(100vw - 40px);
+        height: auto;
+    }
+}

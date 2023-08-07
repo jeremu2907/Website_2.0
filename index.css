@@ -189,6 +189,7 @@ body p {
 #links-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 400px){
@@ -201,8 +202,4 @@ body p {
     #skills-container{
         justify-content: space-evenly;
     }
-
-    /* #skills-container > div {
-        width: 30%;
-    } */
 }

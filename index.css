@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap');
+
+:root{
+    --accent-blue: rgb(0, 177, 217);
+    --dark: rgb(32, 32, 32);
+    --light: white;
+    --light-bg: rgb(243, 243, 243);
+    --light-clr-bg: rgba(255, 255, 255, 0.562);
+    --lightText:#bdbdbd;
+    --darkText: rgb(23,23,23);
+}
+
+body{
+    margin: 0;
+    height: auto;
+}
+
+body h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    color: var(--accent-blue)
+}
+
+body p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+#main {
+    background-color: var(--light-bg);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px
+}
+
+#main > div {
+    border-radius: 20px;
+    position: relative;
+    min-height: calc(100vh - 40px);
+    height:auto;
+    box-shadow: 5px 5px 10px rgb(206, 206, 206);
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    background-color: white;
+}
+
+#personal-info {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#tech-info {
+    flex: 2;
+    justify-content: space-evenly;
+}
+
+/* #tech-info > div {
+    width:0
+} */
+
+#profile-img-container {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#profile-info {
+    position:relative;
+    flex:1;
+}
+
+#profile-info > h1 {
+    text-align: center;
+}
+
+#profile-edu {
+    color: rgb(255, 145, 0)
+}
+
+#skills-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+#skills-container > div {
+    white-space: nowrap;
+    border-radius: 10px;
+    border: solid 2px var(--dark);
+    width: auto;
+    padding: 0 30px 0 30px;
+    text-align: center;
+}
+
+#exp-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-item {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.exp-item p {
+    margin: 5px 0
+}
+
+.exp-title {
+    max-width: 50%;
+}
+
+.exp-status {
+    text-align:end
+}
+
+#links-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 400px){
+    #main > div {
+        flex:none;
+        width: calc(100vw - 40px);
+        height: auto;
+    }
+
+    #skills-container{
+        justify-content: space-evenly;
+    }
+
+    /* #skills-container > div {
+        width: 30%;
+    } */
+}

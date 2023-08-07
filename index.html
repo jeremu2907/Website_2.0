@@ -1,238 +1,81 @@
 <!DOCTYPE html>
-<html style="height:100%;background-color: black;">
+<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/jeremu2907/Website_2.0/main/icon.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src = "index.js"></script>
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-
     <body>
-        <title>Jeremy Nguyen</title> 
-
-        <div class="navBar" style="z-index: 999999999;">
-            <button class="navButton" onclick="clickWelcome()" >Welcome</button>
-            <button class="navButton" onclick="clickAbout()" >About</button>
-            <button class="navButton" onclick="clickSkills()">Skills</button>
-            <button class="navButton" onclick="clickProjects()">Projects</button>
-            <button class="navButton" onclick="clickExperience()">Experience</button>
-        </div>
-
-        <!--Welcome Screen-->
-        <section id="Name" class=" name" style="z-index: 99999999;">
-            <div class="welcome">
-                <div class="myName">
-                    <div id="welcomeMessage">Hello!</div>
+        <section id="main">
+            <div id="personal-info">
+                <div id="profile-img-container">
+                    <img src="IMG_2620.jpg" id="profile-img">
                 </div>
-                <div id="message" class="exp_p message">
-                    <h style="font-size: calc((2vh + 3vw)/2)">Welcome to my website</h>
+                <div id="profile-info">
+                    <h1>Jeremy Lam Nguyen</h1>
+                    <p>Software Developer 💻</p>
+                    <p id="profile-edu">The University of Texas at Dallas</p>
+                    <a href='mailto:jeremu2907@gmail.com? target='_blank''>jeremu2907@gmail.com</a>
+                    <br><br>
+                    <p>Working hard to buy myself an espresso machine ☕! I also work as an independent contractor so go ahead and email me if you are interested to have me as a business partner</p>
                 </div>
             </div>
-        </section>
-
-        <section id="mainPage" style="position:relative; height: auto; z-index: 99999;">
-            <div id="terminalBG" class="bg-image">
-                <!-- Typing screen -->
-                <div id="media" class="media">
-                    <div class="intro" id="intro"></div>
-                </div>
-
-                <div id="clickBox" onclick="openterminal()">
-                </div>
-            </div>
-        </section>
-        <!--Next Page-->
-        <section id="skills">
-            <div id="moreInformation" class="bg-image2">
-            </div>
-            <div id="skills" class="bg-text-left">
-                <div id="textBox" class="textBox">
-                    <p class="title">Skills</p>
-                    <div id="list" class="list" style = "font-size: 15px">
-                        <ul>
-                            <li style="color:#719aac">C/C++ *My Favorite*</li>
-                            <li style="color:#ac8c71">Java</li>
-                            <li style="color:#3f8bac">React</li>
-                            <li style="color:#aca771">JavaScript</li>
-                            <li style="color:#717bac">TypeScript</li>
-                            <li style="color:#aca21d94">Python</li>
-                            <li style="color:#7bc977">Nginx</li>
-                            <li style="color:#71a8ac">Docker</li>
-                            <li >MIPS Assembly</li>
-                        </ul>
-                    </div>
-                    <p class="title">Coursework</p>
-                    <div id="list2" class="list" style = "font-size: 15px">
-                        <ul>
-                            <li>Computer Science</li>
-                            <li>Data Structures and Algorithm Analysis</li>
-                            <li>Computer Architecture & Digital Logic</li>
-                            <li>Automata Theory</li>
-                            <li>Discrete Mathematics</li>
-                            <li>Linear Algebra/Statistics</li>
-                            <li>Differential/Integral Calculus</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section> <div  id="projectSection">
-            <div class="project">
-                <div style="display: flex; flex-direction: column; margin-bottom: auto;">
-                    <h class="projectTitle">Project Yumiya</h>
-                    <a href="https://yumiya.netlify.app/" class="projectDesc tryProject" target="_blank">Try out this project!</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTU8_fapXGJBWNMdxHji_uxvlhsEup2iVvXdYrKQG9zprPuA/viewform?usp=sf_link" 
-                        class="projectDesc tryProject" target="_blank">Request for alpha test access</a>
-                </div>
-                <div class="projectDesc" id="projectDesc">
-                    <p>
-                        I created a productivity application that aims to strengthen
-                        users' time management by highlighting daily events, providing a quick 
-                        note-taking space, and providing insights to potential unexpected risks
-                    </p>
-                    <p>
-                        This program is written in ReactJS, ExpressJS and integrates the Google Calendar,
-                        Google Maps, OpenWeatherMap APIs, as well as MongoDB
-                    </p>
-                </div>
-            </div>
-            <div class = "bar"></div>
-            <div class="project">
-                <div style="display: flex; flex-direction: column; margin-bottom: auto;">
-                    <h class="projectTitle">Physics Engine</h>
-                    <a href="https://github.com/jeremu2907/particlePhysics" class="projectDesc tryProject" target="_blank">Source code on GitHub</a>
-                </div>
-                <div class="projectDesc">
-                    <p>
-                        In the pursuit of knowledge in Mathematics and Physics, I am writing 
-                        a physics engine from scratch. I don't know where this project will be heading,
-                        but I expect to learn a lot from this
-                    </p>
-                    <p>
-                        The project so far has the capability to detect and resolve circular object collisions.
-                        In the future, I want to finish implementing concave hull collisions, as well as spring
-                        systems for this engine
-                    </p>
-                    <p>
-                        This engine takes advantage of the speed of C++ for calculations and OOP design, and SDL2 Library 
-                        to render samples
-                    </p>
-                </div>
-            </div>
-            <div class = "bar"></div>
-            <div class="project">
-                <div style="display: flex; flex-direction: column; margin-bottom: auto;">
-                    <h class="projectTitle">Waddle</h>
-                    <a href="https://github.com/jeremu2907/Waddle" class="projectDesc tryProject" target="_blank">Source code on GitHub</a>
-                </div>
-                <div class="projectDesc">
-                    <p>
-                        Hosting and applying for volunteering opportunities should be easy instead of having to search accross
-                        multiple decentralized, un-organized sources
-                    </p>
-                    <p>
-                        In the effort to solve this problem, I and my team made
-                        a web application that streamlines the process of organizing and applying to local volunteering events
-                        during HackUTD
-                    </p>
-                    <p>
-                        This application is written in vanilla JavaScript, HTML, CSS for front-end, 
-                        Python for back-end, and utilizes MongoDB as the database
-                    </p>
-                </div>
-            </div>
-
-            
-        </div></section>
-
-        <!--Experience-->
-        <section id="experience" class=" exp">
-            <div id="moreInformation" class="bg-image3">
-            </div>
-
-            <div style="position:relative">
-                <div class="exp_title" style="color:rgb(0, 208, 255); font-size:4vh"><h>Experience</h></div><br>
-                <div id="subject" class="exp_p"><h style="font-size: 3vh;">Come along to see my journey, so far</h></div>
-            </div>
-
-            <div>
-                <div id="L3" class="exp_wrap exp_subject row">
-                    <div class="exp_subject_company">
-                        <h>L3 Harris Technologies</h>
-                        <h1>Software Engineer Co-op</h1>
-                        <h2>January 2023 - Present</h2>
-                    </div>
-                    <div id="description2" class="exp_subject_description">
-                        <ul>Current role, I'll tell you more about it later :)</ul>
-                    </div>
-                </div>
-                <div id="arng" class="exp_wrap exp_subject row">
-                    <div class="exp_subject_company">
-                        <h>Army National Guard</h>
-                        <h1>Construction Engineer / Carpenetry-Masonry Specialist</h1>
-                        <h2>March 2020 – Present</h2>
-                    </div>
-                    <div id="description2" class="exp_subject_description">
-                        <ul>Inspect military transportation units (LMTV, HUMVEE, etc.), report malfunctions for maintenance team</ul>
-                        <ul>Load and unload military equipment, transport cargo for projects using heavy-duty trucks (LMTVs)</ul>
-                        <ul>Read, interpret, and take initiative to implement construction project drawings with other construction
-                            engineers in same or many platoons into job sites</ul>
-                        <ul>Closely complete tasks set forth by leaders and accurately report mission outcomes to senior NonCommissioned Officers</ul>
-                        <ul>Clean, maintain, repair, and inventory firearms and other weapon systems</ul>
+            <div id="tech-info">
+                <div>
+                    <h1>Skills</h1>
+                    <div id="skills-container">
+                        <div id="C"><p>C++</p></div>
+                        <div id="C"><p>C</p></div>
+                        <div id="JAVA"><p>Java</p></div>
+                        <div id="JS"><p>JavaScript</p></div>
+                        <div id="TS"><p>TypeScript</p></div>
+                        <div id="PY"><p>Python</p></div>
+                        <div id="HTML"><p>HTML</p></div>
+                        <div id="CSS"><p>CSS</p></div>
+                        <div id="REACT"><p>React JS</p></div>
+                        <div id="REACT"><p>React Native</p></div>
+                        <div id="DOCKER"><p>Docker</p></div>
+                        <div id="LINUX"><p>Linux</p></div>
+                        <div id="NGINX"><p>Nginx</p></div>
+                        <div id="FULLSTACK"><p>Fullstack</p></div>
                     </div>
                 </div>
 
-                <div id="xforce" class="exp_wrap exp_subject row">
-                    <div class="exp_subject_company">
-                        <h>X-Force Fellowship - GXM</h>
-                        <h1>Software Developer</h1>
-                        <h2>June 2022 - August 2022</h2>
-                    </div>
-                    <div id="description" class="exp_subject_description">
-                        <ul>Take the current GUI code of a software for collecting data from high-speed projectiles, which is in gtkmm2 with C/C++98, and convert it to gtkmm3 with C/C++17</ul>
-                        <ul>Compile libraries and compose scripts for the above software for operation in Windows environment, as the current code is optimized for Linux OS</ul>
-                    </div>
-                </div>
-                
-                <div id="numerade" class="exp_wrap exp_subject row">
-                    <div class="exp_subject_company">
-                        <h>Numerade</h>
-                        <h1>Mathematics and Physics Content Creator</h1>
-                        <h2>March 2021 – February 2022</h2>
-                    </div>
-                    <div id="description3" class="exp_subject_description">
-                        <ul>Content creator by recording videos explaining problems presented in textbooks</ul>
-                        <ul>Respond to homework questions in real time on Q&A sections and record a video explaining the topic in an
-                            in-depth manner</ul>
+                <div>
+                    <h1>Experience</h1>
+                    <div id="exp-container">
+                        <div class="exp-item">
+                            <p class="exp-title">Independent Software Developer</p>
+                            <p class="exp-status">Active</p>
+                        </div>
+                        <div class="exp-item">
+                            <p class="exp-title">L3 Harris | Software Engineer</p>
+                            <p class="exp-status">January 2023 - August 2023</p>
+                        </div>
+                        <div class="exp-item">
+                            <p class="exp-title">NSIN - DoD | Software Engineer</p>
+                            <p class="exp-status">June 2023 - August 2023</p>
+                        </div>
+                        <div class="exp-item">
+                            <p class="exp-title">Army | Texas National Guard</p>
+                            <p class="exp-status"> Active</p>
+                        </div>
                     </div>
                 </div>
 
-                <div id="mathnasium" class="exp_wrap exp_subject row">
-                    <div class="exp_subject_company">
-                        <h>Mathnasium</h>
-                        <h1>Mathematics and Physics Tutor</h1>
-                        <h2>June 2019 – May 2020</h2>
-                    </div>
-                    <div id="description4" class="exp_subject_description">
-                        <ul>Tutored math ranging from K-12 including specialized topics including Calculus, Linear Algebra, Statistics,
-                            IB Math Higher Level</ul>
-                        <ul>Tutored high school physics to college-level, calculus-based physics (Mechanics and Electric & Magnetism)</ul>
+                <div>
+                    <h1>Get to Know Me!</h1>
+                    <div id="links-container">
+                        <a href="https://github.com/jeremu2907" target="_blank">My Github</a>
+                        <a href="https://www.linkedin.com/in/jeremu2907/" target="_blank">My LinkedIn</a>
+                        <a href="https://github.com/jeremu2907/jeremu2907/blob/main/UpdatedResume.pdf" target="_blank">My Resume</a>
                     </div>
                 </div>
-                
-            </div>
-        </section>
-        <section id="lastPage">
-            <div id="thank">
-                I really like coffee so hit me up if you want and we can get coffee together sometime!
             </div>
         </section>
     </body>
-
 </html>

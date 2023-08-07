@@ -54,6 +54,7 @@ Features
 //////////////////////////////////////*/
 
 .navBar{
+    visibility: hidden;
     position: sticky;
     top: 0px;
     z-index: 10000000;
@@ -165,14 +166,14 @@ Name
     /* border-bottom: 1px solid rgb(225, 19, 19); */
 }
 
-.name::after{
+/* .name::after{
     content: "";
     position: absolute;
     top:100%;
     width: 50%;
     left:25%;
     border-bottom: 1px solid rgb(0, 208, 255);
-}
+} */
 .welcome{
     position: relative;
     height: 10%;
@@ -235,6 +236,13 @@ SECTION 1
 
 
 //////////////////////////////////////*/
+#mainPage{
+    background-image: url("IMG_2620.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 #clickBox{
     position:absolute;
     width: 50px;
@@ -291,11 +299,10 @@ SECTION 1
     animation: none;
 }
 .bg-image {
-    position: ab;
     min-height: 100vh;
     height: auto;
     width:100vw;
-    background-image: linear-gradient(var(--dark),rgba(0,0,0,0));
+    background-image: linear-gradient(rgba(0,0,0,0.2),var(--dark));
     backdrop-filter: blur(2px);
     display: flex;
     flex-direction: column;
@@ -431,51 +438,49 @@ SECTION 2
 
 /* Side Panels */
 #skills{
-    z-index: 999999;
-    position: relative;
-    padding: 50px 0px 50px 0px;
-}
-.bg-text-left {
-    background-color: rgba(23, 23, 23, 0);
-    position: relative;
-    width: calc(50ch + 80px);
-    height: 80%;
-     left: 50%;
-    transform: translate(-50%);
-    /* border: solid 5px white; */
-    padding: 40px;
-}
-.textBox {
-    position:relative;
-    color:#bdbdbd;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    left:50%;
-    transform: translate(-50%);
-    box-shadow: 15px 25px 15px 10px rgba(0, 0, 0, 0.521);
-    backdrop-filter: blur(4px);
-}
-.title{
-    color: rgb(0, 208, 255);
-    text-align:center;
-    font-family: 'Cairo', sans-serif;
-    font-size: 4vh;
-    /* text-decoration: underline; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("IMG_1837.jpg");
 }
 .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    align-content: space-between;
+    height:auto;
+    flex: 2;
+}
+
+.title {
+    height:auto;
+    /* flex: 1; */
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+}
+.title h1{
+    color: rgb(0, 208, 255);
+    font-family: 'Cairo', sans-serif;
+    /* font-size: 4vh; */
+}
+
+.skill-box{
     position:relative;
-    font-family: 'Cormorant Garamond', serif;
     text-align:   center;
     overflow-wrap:normal;
+    width: 20vw;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
 }
-.list ul{
-    list-style-type: none;
-    padding: 0;
+
+.skill-box h1 {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 3vh;
-}
-.list li{
-    margin-bottom: 15px;
-    font-size: 2.5vh;
 }
 
 
@@ -574,7 +579,7 @@ SECTION 3
 }
 .bg-image3 {
     position:absolute;
-    background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("section1dark.jpg");
+    /* background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("section1dark.jpg"); */
     /* background-position: bottom 100000px center; */
     transform: translateZ(-1px) scale(3.5);
     z-index: -6;

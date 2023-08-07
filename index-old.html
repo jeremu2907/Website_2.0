@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html style="height:100%;background-color: black;">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/jeremu2907/Website_2.0/main/icon.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src = "index.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    </head>
+
+    <body>
+        <title>Jeremy Nguyen</title> 
+
+        <div class="navBar" style="z-index: 999999999;">
+            <button class="navButton" onclick="clickWelcome()" >Welcome</button>
+            <button class="navButton" onclick="clickAbout()" >About</button>
+            <button class="navButton" onclick="clickSkills()">Skills</button>
+            <button class="navButton" onclick="clickProjects()">Projects</button>
+            <button class="navButton" onclick="clickExperience()">Experience</button>
+        </div>
+
+        <!--Welcome Screen-->
+        <section id="Name" class=" name" style="z-index: 99999999;">
+            <div class="welcome">
+                <div class="myName">
+                    <div id="welcomeMessage">Hello!</div>
+                </div>
+                <div id="message" class="exp_p message">
+                    <h style="font-size: calc((2vh + 3vw)/2)">Welcome to my website</h>
+                </div>
+            </div>
+        </section>
+
+        <section id="mainPage" style="position:relative; height: auto; z-index: 99999;">
+            <div id="terminalBG" class="bg-image">
+                <!-- Typing screen -->
+                <div id="media" class="media">
+                    <div class="intro" id="intro"></div>
+                </div>
+
+                <div id="clickBox" onclick="openterminal()">
+                </div>
+            </div>
+        </section>
+        <!--Next Page-->
+        <section id="skills">
+            <div class="title">
+                <h1>Skills</h1>
+            </div>
+            <div id="list" class="list">
+                <div class="skill-box" style="background-color:#719aac"><h1>C/C++</h1></div>
+                <div class="skill-box" style="background-color:#ac8c71"><h1>Java</h1></div>
+                <div class="skill-box" style="background-color:#3f8bac"><h1>React</h1></div>
+                <div class="skill-box" style="background-color:#aca771"><h1>JavaScript</h1></div>
+                <div class="skill-box" style="background-color:#717bac"><h1>TypeScript</h1></div>
+                <div class="skill-box" style="background-color:#aca21d94"><h1>Python</h1></div>
+                <div class="skill-box" style="background-color:#7bc977"><h1>Nginx</h1></div>
+                <div class="skill-box" style="background-color:#71a8ac"><h1>Docker</h1></div>
+                <div class="skill-box" style="background-color: #bdbdbd"><h1>MIPS Assembly</h1></div>
+            </div>
+        </section>
+
+        <section> <div  id="projectSection">
+            <div class="project">
+                <div style="display: flex; flex-direction: column; margin-bottom: auto;">
+                    <h class="projectTitle">Project Yumiya</h>
+                    <a href="https://yumiya.netlify.app/" class="projectDesc tryProject" target="_blank">Try out this project!</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTU8_fapXGJBWNMdxHji_uxvlhsEup2iVvXdYrKQG9zprPuA/viewform?usp=sf_link" 
+                        class="projectDesc tryProject" target="_blank">Request for alpha test access</a>
+                </div>
+                <div class="projectDesc" id="projectDesc">
+                    <p>
+                        I created a productivity application that aims to strengthen
+                        users' time management by highlighting daily events, providing a quick 
+                        note-taking space, and providing insights to potential unexpected risks
+                    </p>
+                    <p>
+                        This program is written in ReactJS, ExpressJS and integrates the Google Calendar,
+                        Google Maps, OpenWeatherMap APIs, as well as MongoDB
+                    </p>
+                </div>
+            </div>
+            <div class = "bar"></div>
+            <div class="project">
+                <div style="display: flex; flex-direction: column; margin-bottom: auto;">
+                    <h class="projectTitle">Physics Engine</h>
+                    <a href="https://github.com/jeremu2907/particlePhysics" class="projectDesc tryProject" target="_blank">Source code on GitHub</a>
+                </div>
+                <div class="projectDesc">
+                    <p>
+                        In the pursuit of knowledge in Mathematics and Physics, I am writing 
+                        a physics engine from scratch. I don't know where this project will be heading,
+                        but I expect to learn a lot from this
+                    </p>
+                    <p>
+                        The project so far has the capability to detect and resolve circular object collisions.
+                        In the future, I want to finish implementing concave hull collisions, as well as spring
+                        systems for this engine
+                    </p>
+                    <p>
+                        This engine takes advantage of the speed of C++ for calculations and OOP design, and SDL2 Library 
+                        to render samples
+                    </p>
+                </div>
+            </div>
+            <div class = "bar"></div>
+            <div class="project">
+                <div style="display: flex; flex-direction: column; margin-bottom: auto;">
+                    <h class="projectTitle">Waddle</h>
+                    <a href="https://github.com/jeremu2907/Waddle" class="projectDesc tryProject" target="_blank">Source code on GitHub</a>
+                </div>
+                <div class="projectDesc">
+                    <p>
+                        Hosting and applying for volunteering opportunities should be easy instead of having to search accross
+                        multiple decentralized, un-organized sources
+                    </p>
+                    <p>
+                        In the effort to solve this problem, I and my team made
+                        a web application that streamlines the process of organizing and applying to local volunteering events
+                        during HackUTD
+                    </p>
+                    <p>
+                        This application is written in vanilla JavaScript, HTML, CSS for front-end, 
+                        Python for back-end, and utilizes MongoDB as the database
+                    </p>
+                </div>
+            </div>
+
+            
+        </div></section>
+
+        <!--Experience-->
+        <section id="experience" class=" exp">
+            <!-- <div id="moreInformation" class="bg-image3"> -->
+            </div>
+
+            <div style="position:relative">
+                <div class="exp_title" style="color:rgb(0, 208, 255); font-size:4vh"><h>Experience</h></div><br>
+                <div id="subject" class="exp_p"><h style="font-size: 3vh;">Come along to see my journey, so far</h></div>
+            </div>
+
+            <div>
+                <div id="L3" class="exp_wrap exp_subject row">
+                    <div class="exp_subject_company">
+                        <h>L3 Harris Technologies</h>
+                        <h1>Software Engineer Co-op</h1>
+                        <h2>January 2023 - Present</h2>
+                    </div>
+                    <div id="description2" class="exp_subject_description">
+                        <ul>Developed software, created unit tests, maintained pipline, and implemented automation for various software</ul>
+                        <ul>Developed mathematical methods for simulating spatial environment used in software</ul>
+                        <ul>Tech I used: C/C++, QT, Bash, Python, Podman, Docker, Jenkins, CSS, Linux</ul>
+                    </div>
+                </div>
+                <div id="arng" class="exp_wrap exp_subject row">
+                    <div class="exp_subject_company">
+                        <h>Army National Guard</h>
+                        <h1>Construction Engineer / Carpenetry-Masonry Specialist</h1>
+                        <h2>March 2020 – Present</h2>
+                    </div>
+                    <div id="description2" class="exp_subject_description">
+                        <ul>Secondary in charge of operating and repairing the Engagement Skills Trainer system</ul>
+                        <ul>Inspected, maintained, and reported deficiencies of $1.5 million worth of heavy military armored vehicles, weapon systems, and other equipment</ul>
+                        <ul>Clean, maintain, repair, and inventory firearms and other weapon systems</ul>
+                    </div>
+                </div>
+
+                <div id="xforce" class="exp_wrap exp_subject row">
+                    <div class="exp_subject_company">
+                        <h>X-Force Fellowship - GXM</h>
+                        <h1>Software Developer</h1>
+                        <h2>June 2022 - August 2022</h2>
+                    </div>
+                    <div id="description" class="exp_subject_description">
+                        <ul>I worked with the United States Army to develop a software used to report data collected during mission</ul>
+                        <ul>Tech I used: C/C++, Python, gtkmm, Bash</ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="lastPage">
+            <div id="thank">
+                I really like coffee so hit me up if you want and we can get coffee together sometime!
+            </div>
+        </section>
+    </body>
+
+</html>

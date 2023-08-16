@@ -108,12 +108,13 @@ body p {
 #skills-container > div {
     white-space: nowrap;
     border-radius: 10px;
-    border: solid 2px var(--darkText);
+    /* border: solid 2px var(--darkText); */
     width: auto;
     padding: 0 20px;
     text-align: center;
     transition: background-color 0.2s, color 0.23s;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 1px 1px 5px rgba(164, 164, 164, 0.573);
 }
 
 #skills-container > div > p {

@@ -96,7 +96,15 @@ section {
 @media (max-width: 400px){
     #main > div {
         flex:none;
-        width: calc(100vw - 40px);
+        width: 100vw;
         height: auto;
+    }
+
+    #main img {
+        width: calc(100% - 20px)
+    }
+
+    #main img:hover {
+        width: calc(100% - 7px);
     }
 }

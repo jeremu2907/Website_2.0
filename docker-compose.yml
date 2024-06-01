@@ -1,0 +1,13 @@
+services:
+  personal-site:
+    image: nginx
+    volumes:
+      - ./public:/sites:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    restart: unless-stopped
+    ports:
+      - 3002:80
+
+networks:
+  proxy:
+    external: true
